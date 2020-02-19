@@ -1,0 +1,59 @@
+.banner {
+  position: relative;
+  height: 50vh;
+  background-image: url("/img/banner.jpg");
+  background-size: cover;
+  background-position: center;
+}
+#banner_box {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+
+  .textHolder {
+    font-size: 45px;
+    padding: 5px;
+    height: 50vh;
+    width: 100%;
+    border-radius: $br;
+    background-color: $red;
+    color: $white;
+    box-shadow: $bs;
+    -webkit-box-shadow: $bs;
+  }
+  .readMore a{
+    color: $white;
+    border-radius: $br;
+    background-color: $red;
+    padding: 10px;
+    transition: ease-in 300ms;
+    &:hover {
+      background-color: darken($red, 7.5%);
+    }
+  }
+}
+@media (min-width: 768px) {
+  .banner {
+    height: 100vh;
+  }
+  #banner_box {
+
+    .textHolder {
+      font-size: 16px;
+      padding: 15px;
+      height: 220px;
+      width: 420px;
+
+    }
+    .readMore a{
+      color: $white;
+      border-radius: $br;
+      background-color: $red;
+      padding: 10px;
+      transition: ease-in 300ms;
+      &:hover {
+        background-color: darken($red, 7.5%);
+      }
+    }
+  }
+}

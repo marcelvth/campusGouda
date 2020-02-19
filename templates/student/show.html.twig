@@ -1,0 +1,38 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Student{% endblock %}
+
+{% block body %}
+    <h1>Student</h1>
+
+    <table class="table">
+        <tbody>
+            <tr>
+                <th>Id</th>
+                <td>{{ student.id }}</td>
+            </tr>
+            <tr>
+                <th>Naam</th>
+                <td>{{ student.naam }}</td>
+            </tr>
+            <tr>
+                <th>Email</th>
+                <td>{{ student.email }}</td>
+            </tr>
+            <tr>
+                <th>Adres</th>
+                <td>{{ student.adres }}</td>
+            </tr>
+            <tr>
+                <th>Woonplaats</th>
+                <td>{{ student.woonplaats }}</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <a href="{{ path('student_index') }}">back to list</a>
+
+    <a href="{{ path('student_edit', {'id': student.id}) }}">edit</a>
+
+    {{ include('student/_delete_form.html.twig') }}
+{% endblock %}

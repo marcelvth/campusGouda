@@ -1,0 +1,11 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}New Beoordeling{% endblock %}
+
+{% block body %}
+    <h1>Create new Beoordeling</h1>
+
+    {{ include('beoordeling/_form.html.twig') }}
+
+    <a href="{{ path('beoordeling_index') }}">back to list</a>
+{% endblock %}
