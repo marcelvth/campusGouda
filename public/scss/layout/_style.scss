@@ -1,4 +1,3 @@
-
 section {
   background-color: $white;
 
@@ -7,58 +6,36 @@ section {
   }
 
 }
-
 #media {
-ul {
+  ul {
+    list-style: none;
+    li {
+      display: inline-block;
+      svg {
+        height: 40px;
+        fill: $red;
 
-  list-style: none;
+        &:focus,
+        &:hover {
+          transform: translate3d(0, -3px, 0);
+          transition: all 0.2s ease-in-out;
+        }
 
-  li {
-    display: inline-block;
-    svg {
-      height: 40px;
-      fill: $red;
-
-      &:focus,
-      &:hover {
-        transform: translate3d(0, -3px, 0);
-        transition: all 0.2s ease-in-out;
       }
-
     }
   }
-
 }
-
-}
-
-//.banner_box2 {
-//  height: 50px;
-//  width: 170px;
-//  background-color: #DE3232;
-//  border-radius: $br;
-//  cursor: pointer;
-//}
-//
-//
-//.banner_box1 {
-//  height: 220px;
-//  width: 420px;
-//  background-color: #DE3232;
-//  border-radius: $br;
-//  padding: 15px;
-//}
 
 .banner_box2 {
   height: 50px;
   width: 170px;
   background-color: #DE3232;
-  border-radius: $br;
   cursor: pointer;
 
   .title {
     background-color: $red;
   }
+
 }
 
 .box_text {
@@ -74,35 +51,6 @@ a {
     text-decoration: none;
   }
 }
-
-//.section2 {
-//  background-color: #FFF8D6;
-//  width: 100%;
-//  height: 100vh !important;
-//}
-
-//.container {
-//  height: 80vh;
-//  display: flex;
-//  justify-content: center;
-//  align-items: center;
-//  flex-direction: column;
-//}
-
-//.text_title {
-//  color: #DE3232;
-//  font-size: 60px;
-//}
-
-.svg {
-  width: 400px;
-}
-
-//.section3 {
-//  background-color: #FFF;
-//  width: 100%;
-//  height: 100vh;
-//}
 
 .text-title {
   color: #DE3232;

@@ -35,6 +35,11 @@ html {
   color: #DE3232;
 }
 
+.svg {
+  width: 100%;
+  max-width: 400px;
+}
+
 #mainNav {
   background-color: #ffffff;
 }
@@ -222,7 +227,6 @@ section:nth-child(odd) {
   height: 50px;
   width: 170px;
   background-color: #DE3232;
-  border-radius: 15px;
   cursor: pointer;
 }
 .banner_box2 .title {
@@ -240,10 +244,6 @@ a {
 a:hover {
   color: #fff;
   text-decoration: none;
-}
-
-.svg {
-  width: 400px;
 }
 
 .text-title {
@@ -289,21 +289,17 @@ footer {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
+  background-color: #DE3232;
 }
 #banner_box .textHolder {
   font-size: 45px;
   padding: 5px;
   height: 50vh;
   width: 100%;
-  border-radius: 15px;
-  background-color: #DE3232;
   color: #ffffff;
-  box-shadow: 6px 6px 15px -7px rgba(0, 0, 0, 0.75);
-  -webkit-box-shadow: 6px 6px 15px -7px rgba(0, 0, 0, 0.75);
 }
 #banner_box .readMore a {
   color: #ffffff;
-  border-radius: 15px;
   background-color: #DE3232;
   padding: 10px;
   transition: ease-in 300ms;
@@ -312,7 +308,7 @@ footer {
   background-color: #c92020;
 }
 
-@media (min-width: 768px) {
+@media only screen and (min-width: 768px) {
   .banner {
     height: 100vh;
   }
@@ -322,10 +318,10 @@ footer {
     padding: 15px;
     height: 220px;
     width: 420px;
+    float: right;
   }
   #banner_box .readMore a {
     color: #ffffff;
-    border-radius: 15px;
     background-color: #DE3232;
     padding: 10px;
     transition: ease-in 300ms;

@@ -9,21 +9,17 @@
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
+  background-color: $red;
 
   .textHolder {
     font-size: 45px;
     padding: 5px;
     height: 50vh;
     width: 100%;
-    border-radius: $br;
-    background-color: $red;
     color: $white;
-    box-shadow: $bs;
-    -webkit-box-shadow: $bs;
   }
   .readMore a{
     color: $white;
-    border-radius: $br;
     background-color: $red;
     padding: 10px;
     transition: ease-in 300ms;
@@ -32,7 +28,7 @@
     }
   }
 }
-@media (min-width: 768px) {
+@media only screen and (min-width: 768px) {
   .banner {
     height: 100vh;
   }
@@ -43,11 +39,11 @@
       padding: 15px;
       height: 220px;
       width: 420px;
+      float: right;
 
     }
     .readMore a{
       color: $white;
-      border-radius: $br;
       background-color: $red;
       padding: 10px;
       transition: ease-in 300ms;
