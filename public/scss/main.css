@@ -288,7 +288,10 @@ footer {
 #banner_box {
   position: absolute;
   top: 50%;
+  left: 0;
   transform: translateY(-50%);
+  min-width: 60%;
+  margin-left: -20%;
   background-color: #DE3232;
 }
 #banner_box .textHolder {

@@ -2,26 +2,28 @@
 
 namespace App\Form;
 
-use App\Entity\Beoordeling;
+use App\Entity\CgUser;
 use Symfony\Component\Form\AbstractType;
 use Symfony\Component\Form\FormBuilderInterface;
 use Symfony\Component\OptionsResolver\OptionsResolver;
 
-class BeoordelingType extends AbstractType
+class CgUserType extends AbstractType
 {
     public function buildForm(FormBuilderInterface $builder, array $options)
     {
         $builder
-            ->add('beschrijving')
-            ->add('starRating')
-            ->add('student_id')
+            ->add('dateCreated')
+            ->add('email')
+            ->add('password')
+            ->add('cgRole')
+            ->add('Name')
         ;
     }
 
     public function configureOptions(OptionsResolver $resolver)
     {
         $resolver->setDefaults([
-            'data_class' => Beoordeling::class,
+            'data_class' => CgUser::class,
         ]);
     }
 }

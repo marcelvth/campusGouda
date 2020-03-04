@@ -2,9 +2,12 @@
 global.$ = global.jQuery = $;
 
 // any CSS you import will output into a single css file (app.css in this case)
-
+import  '../css/bootstrap.min.css'
+import '../css/aos.css'
+import '../css/tiny-slider.css'
 import '../css/app.css';
 import './aos.js';
+import './tiny-slider.js';
 import './bootstrap.min.js';
 import './popper.min.js';
 import './jquery.easing.compatibility.js';
@@ -46,11 +49,22 @@ import './jquery.easing.min.js';
             $("#mainNav").removeClass("navbar-shrink");
         }
     };
+
     // Collapse now if page is not at top
     navbarCollapse();
     // Collapse the navbar when page is scrolled
     $(window).scroll(navbarCollapse);
 
+    // init tiny slider
+    slider = tns({
+        container: '.slider',
+        items: 1,
+        loop: false,
+        axis: 'vertical',
+        gutter: 50
+    });
+
+    // init animations
     AOS.init();
     AOS.refreshHard();  //optional
 

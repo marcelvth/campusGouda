@@ -1,0 +1,49 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}CgUser index{% endblock %}
+
+{% block body %}
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-sm-12 col-lg-11 mx-auto">
+                <h1>CgUser index</h1>
+
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>Id</th>
+                            <th>DateCreated</th>
+                            <th>Email</th>
+                            <th>Password</th>
+                            <th>CgRole</th>
+                            <th>Name</th>
+                            <th>actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    {% for cg_user in cg_users %}
+                        <tr>
+                            <td>{{ cg_user.id }}</td>
+                            <td>{{ cg_user.dateCreated ? cg_user.dateCreated|date('Y-m-d H:i:s T') : '' }}</td>
+                            <td>{{ cg_user.email }}</td>
+                            <td>{{ cg_user.password }}</td>
+                            <td>{{ cg_user.cgRole }}</td>
+                            <td>{{ cg_user.Name }}</td>
+                            <td>
+                                <a href="{{ path('cg_user_show', {'id': cg_user.id}) }}">show</a>
+                                <a href="{{ path('cg_user_edit', {'id': cg_user.id}) }}">edit</a>
+                            </td>
+                        </tr>
+                    {% else %}
+                        <tr>
+                            <td colspan="7">no records found</td>
+                        </tr>
+                    {% endfor %}
+                    </tbody>
+                </table>
+
+                <a href="{{ path('cg_user_new') }}">Create new</a>
+            </div>
+        </div>
+    </div>
+{% endblock %}

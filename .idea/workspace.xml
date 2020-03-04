@@ -2,14 +2,51 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e66536b3-0420-422e-bb44-7550516d9eb6" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/css/bootstrap.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/css/bootstrap.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/css/bootstrap.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/css/bootstrap.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/css/tiny-slider.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/js/tiny-slider.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Controller/CgUserController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Entity/CgUser.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Repository/CgUserRepository.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/cg_user/edit.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/cg_user/index.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/cg_user/new.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/cg_user/show.html.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/scss/base/_page.scss" beforeDir="false" afterPath="$PROJECT_DIR$/public/scss/base/_page.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/app.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/css/aos.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/aos.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/scss/layout/_banner.scss" beforeDir="false" afterPath="$PROJECT_DIR$/public/scss/layout/_banner.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/scss/layout/_style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/public/scss/layout/_style.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/scss/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/scss/main.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/scss/main.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/public/scss/main.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/BeoordelingController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/HomeController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/StudentController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entity/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entity/Beoordeling.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entity/Student.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Form/BeoordelingType.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Form/StudentType.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Form/CgUserType.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Repository/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Repository/BeoordelingRepository.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Repository/StudentRepository.php" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/beoordeling/_delete_form.html.twig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/beoordeling/_form.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/cg_user/_form.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/beoordeling/edit.html.twig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/beoordeling/index.html.twig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/beoordeling/new.html.twig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/beoordeling/show.html.twig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/home/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/home/index.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/student/_delete_form.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/cg_user/_delete_form.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/student/_form.html.twig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/student/edit.html.twig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/student/index.html.twig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/student/new.html.twig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/student/show.html.twig" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -162,32 +199,38 @@
     </include_path>
   </component>
   <component name="ProjectId" id="1XhgRt4SBwECiMsOTmqqfuB6olW" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="NewWatcherDialog.advanced.open" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/public/js" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../OOP2" />
     <property name="list.type.of.created.stylesheet" value="SCSS" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\xampp\htdocs\campusGouda\assets\js" />
-      <recent name="C:\xampp\htdocs\campusGouda\public\js" />
-      <recent name="C:\xampp\htdocs\campusGouda\public\scss\layout" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\campusGouda\assets\css" />
+      <recent name="C:\xampp\htdocs\campusGouda\assets\js" />
       <recent name="C:\xampp\htdocs\campusGouda\public\js" />
       <recent name="C:\xampp\htdocs\campusGouda\public\css" />
       <recent name="C:\xampp\htdocs\campusGouda\templates\home" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\campusGouda\assets\css" />
+      <recent name="C:\xampp\htdocs\campusGouda\assets\js" />
+      <recent name="C:\xampp\htdocs\campusGouda\public\js" />
+      <recent name="C:\xampp\htdocs\campusGouda\public\scss\layout" />
     </key>
   </component>
   <component name="SvnConfiguration">
@@ -208,12 +251,19 @@
       <workItem from="1582101342486" duration="3457000" />
       <workItem from="1582106498360" duration="1276000" />
       <workItem from="1582128691501" duration="1448000" />
-      <workItem from="1582188444960" duration="1242000" />
+      <workItem from="1582188444960" duration="1842000" />
+      <workItem from="1582370159767" duration="2054000" />
+      <workItem from="1582372237845" duration="1708000" />
+      <workItem from="1583075044065" duration="1042000" />
+      <workItem from="1583308209766" duration="1604000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
   <component name="WindowStateProjectService">
     <state x="234" y="4" key="#File_Watchers" timestamp="1582015553555">
@@ -230,14 +280,18 @@
     </state>
     <state x="595" y="150" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/-302.1440.1280.700/0.0.2048.1112/2560.178.1920.1040/-1920.116.1920.1040@0.0.2048.1112" timestamp="1582097496681" />
     <state x="372" y="92" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1280.680@0.0.1280.680" timestamp="1582015913207" />
+    <state x="262" y="0" key="CommitChangelistDialog2" timestamp="1582370535845">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="262" y="0" key="CommitChangelistDialog2/0.0.1280.680@0.0.1280.680" timestamp="1582370535844" />
     <state x="389" y="62" width="719" height="598" key="EditFileWatcherDialog" timestamp="1582017210589">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="389" y="62" width="719" height="598" key="EditFileWatcherDialog/0.0.1280.680@0.0.1280.680" timestamp="1582017210589" />
-    <state x="431" y="111" key="FileChooserDialogImpl" timestamp="1582016440401">
+    <state x="431" y="111" key="FileChooserDialogImpl" timestamp="1583075986142">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="431" y="111" key="FileChooserDialogImpl/0.0.1280.680@0.0.1280.680" timestamp="1582016440401" />
+    <state x="431" y="111" key="FileChooserDialogImpl/0.0.1280.680@0.0.1280.680" timestamp="1583075986142" />
     <state width="2005" height="308" key="GridCell.Tab.0.bottom" timestamp="1582099069829">
       <screen x="0" y="0" width="2048" height="1112" />
     </state>

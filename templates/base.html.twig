@@ -6,11 +6,8 @@
         <title>{% block title %}Welcome!{% endblock %}</title>
 
         <script src="/js/aos.js"></script>
-
+        {{ encore_entry_link_tags('app') }}
         {% block stylesheets %}
-            <!-- Latest compiled and minified CSS -->
-            <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
-            <link rel="stylesheet" href="/css/aos.css">
             <link rel="stylesheet" type="text/css" href="/scss/main.css">
         {% endblock %}
     </head>
@@ -44,6 +41,10 @@
                                 </li>
                                 <li class="nav-item">
                                     <a class="nav-link js-scroll-trigger" href="#media">Media</a>
+                                </li>
+
+                                <li class="nav-item">
+                                    <a class="nav-link js-scroll-trigger" href="#blog">Blog</a>
                                 </li>
                                 <li class="nav-item">
                                     <a class="nav-link js-scroll-trigger" href="/contact">Contact</a>
