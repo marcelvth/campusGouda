@@ -4,20 +4,14 @@
 }
 
 body {
-  overflow-x: hidden;
   position: relative;
-  display: flex;
-  flex-direction: column;
   height: 100%;
   box-sizing: border-box;
-  background-color: $bgColor;
+  background-color: $white;
 }
 html {
   scroll-behavior: smooth;
   height: 100%;
-}
-.content {
-  flex: 1 0 auto;
 }
 .logo {
   height: 70px;
@@ -29,9 +23,24 @@ html {
 .text_title {
   margin-bottom: 35px;
   color: $red;
+  font-size: 48px;
 }
 .svg {
   width: 100%;
   max-width: 400px;
 }
 
+#overgouda {
+  background-color: $bgColor;
+}
+.overGouda-cols {
+  padding-right: 70px;
+}
+
+#media {
+  background-color: $red;
+  color: $white;
+}
+#media h4 {
+  color: $white;
+}

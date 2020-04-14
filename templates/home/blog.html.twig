@@ -1,0 +1,20 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Blog{% endblock %}
+
+{% block body %}
+   <section>
+       <div class="container-fluid">
+           <div class="row">
+               <div class="col-sm-12 col-lg-11">
+                   {% for article in articles %}
+                       <a href="{{ path('blog_show', {slug: article.slug}) }}">
+                           {{ article.title }}
+                       </a>
+                   {% endfor %}
+               </div>
+           </div>
+       </div>
+   </section>
+
+{%  endblock %}

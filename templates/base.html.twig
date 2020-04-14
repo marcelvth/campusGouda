@@ -1,79 +1,71 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>{% block title %}Welcome!{% endblock %}</title>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{% block title %}Welcome!{% endblock %}</title>
 
-        <script src="/js/aos.js"></script>
-        {{ encore_entry_link_tags('app') }}
-        {% block stylesheets %}
-            <link rel="stylesheet" type="text/css" href="/scss/main.css">
-        {% endblock %}
-    </head>
-    <body>
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-sm-12 col-lg-11 mx-auto">
+    <script src="/js/aos.js"></script>
+    {{ encore_entry_link_tags('app') }}
+    {% block stylesheets %}
+        <link rel="stylesheet" type="text/css" href="/scss/main.css">
+    {% endblock %}
+</head>
+<body>
                 <!-- Navigation -->
-                <nav class="navbar navbar-expand-lg  fixed-top" id="mainNav">
-                    <div class="container">
-                        <a class="navbar-brand js-scroll-trigger">
-                            <h1 class="text_title mb-0">Campus Gouda</h1>
-                        </a>
-                        <div class="menu cross navbar-toggler navbar-toggler-right" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-                            <label>
-                                <input type="checkbox">
-                                <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
-                                    <path class="line--1" d="M0 70l28-28c2-2 2-2 7-2h64" />
-                                    <path class="line--2" d="M0 50h99" />
-                                    <path class="line--3" d="M0 30l28 28c2 2 2 2 7 2h64" />
-                                </svg>
-                            </label>
-                        </div>
-                        <div class="collapse navbar-collapse" id="navbarResponsive">
-                            <ul class="navbar-nav text-uppercase ml-auto">
-                                <li class="nav-item">
-                                    <a class="nav-link js-scroll-trigger" href="/home">Home</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link js-scroll-trigger" href="#overgouda">Over gouda</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link js-scroll-trigger" href="#media">Media</a>
-                                </li>
-
-                                <li class="nav-item">
-                                    <a class="nav-link js-scroll-trigger" href="#blog">Blog</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link js-scroll-trigger" href="/contact">Contact</a>
-                                </li>
-                            </ul>
+                <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+                    <a class="navbar-brand" href="#">Campus Gouda</a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+                            aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarResponsive">
+                        <ul class="navbar-nav ml-auto">
+                            <li class="nav-item active">
+                                <a class="nav-link" href="{{ path('home') }}">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#blog">Blog</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#overgouda">Over Gouda</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#media">Media</a>
+                            </li>
+                        </ul>
+                        <div class="ml-5">
+                            <a href="{{ path('contact') }}" class="btn btn-outline-danger" role="button">Contact</a>
                         </div>
                     </div>
                 </nav>
-            </div>
-        </div>
-    </div>
 
 
-    <div class="content"
         {% block body %}
 
         {% endblock %}
-    </div>
 
 
     <footer>
         <div class="footer">
-            &copy; mboRijnland 2020.
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12 col-lg-4">
+
+                    </div>
+                    <div class="col-sm-12 col-lg-4">
+                    </div>
+                    <div class="col-sm-12 col-lg-4">
+
+                    </div>
+                </div>
+            </div>
         </div>
     </footer>
 
-        {{ encore_entry_script_tags('app') }}
-        {% block javascripts %}
+    {{ encore_entry_script_tags('app') }}
+    {% block javascripts %}
 
-        {% endblock %}
-    </body>
+    {% endblock %}
+</body>
 </html>
