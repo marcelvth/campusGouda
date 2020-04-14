@@ -1,58 +1,51 @@
 .banner {
   position: relative;
   height: 50vh;
-  background-image: url("/img/banner.jpg");
+  background-image: url("/img/bannerbg.jpg");
   background-size: cover;
   background-position: center;
 }
-#banner_box {
-  position: absolute;
-  top: 50%;
-  left: 0;
-  transform: translateY(-50%);
-  min-width: 60%;
-  margin-left: -20%;
-  background-color: #DE3232;
 
-  .textHolder {
-    font-size: 45px;
-    padding: 5px;
-    height: 50vh;
-    width: 100%;
-    color: $white;
-  }
-  .readMore a{
-    color: $white;
-    background-color: $red;
-    padding: 10px;
-    transition: ease-in 300ms;
-    &:hover {
-      background-color: darken($red, 7.5%);
-    }
-  }
-}
 @media only screen and (min-width: 768px) {
   .banner {
     height: 100vh;
   }
-  #banner_box {
+}
 
-    .textHolder {
-      font-size: 16px;
-      padding: 15px;
-      height: 220px;
-      width: 420px;
-      float: right;
+.header {
+  margin: auto;
+  padding-top: 230px;
+}
 
-    }
-    .readMore a{
-      color: $white;
-      background-color: $red;
-      padding: 10px;
-      transition: ease-in 300ms;
-      &:hover {
-        background-color: darken($red, 7.5%);
-      }
-    }
-  }
+.header h1 {
+  font-size: 72px;
+  color: $red;
+}
+
+.header p {
+  font-size: 36px;
+  line-height: 42px;
+  color: $red;
+}
+
+.header button {
+  padding: 0.7em 4em;
+  background: rgba(255, 255, 255, 0.6);
+}
+
+.header .container {
+  background-color: transparent;
+}
+
+.overgouda-jumbo {
+  background-color: $red;
+}
+
+.overgouda-jumbo h2 {
+  color: $white;
+  font-weight: 500;
+}
+
+.overgouda-jumbo h2, .overgouda-jumbo p {
+  color: $white;
 }

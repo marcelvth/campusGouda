@@ -14,6 +14,24 @@
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/symfony2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/bannerbg.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/watcherTasks.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/watcherTasks.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/scss/base/_page.scss" beforeDir="false" afterPath="$PROJECT_DIR$/public/scss/base/_page.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/scss/base/_vars.scss" beforeDir="false" afterPath="$PROJECT_DIR$/public/scss/base/_vars.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/scss/components/_buttons.scss" beforeDir="false" afterPath="$PROJECT_DIR$/public/scss/components/_buttons.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/scss/components/_navbar.scss" beforeDir="false" afterPath="$PROJECT_DIR$/public/scss/components/_navbar.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/scss/layout/_banner.scss" beforeDir="false" afterPath="$PROJECT_DIR$/public/scss/layout/_banner.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/scss/layout/_style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/public/scss/layout/_style.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/scss/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/scss/main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/scss/main.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/public/scss/main.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/home/contact.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/home/contact.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/home/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/home/index.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webpack.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/webpack.config.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,9 +40,7 @@
   </component>
   <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
     <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
-    <execution>
-      <executable />
-    </execution>
+    <execution />
   </component>
   <component name="DatabaseView">
     <option name="SHOW_INTERMEDIATE" value="true" />
@@ -49,6 +65,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="Lukas" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="PhpWorkspaceProjectConfiguration">
@@ -171,7 +192,6 @@
   </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
-    <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
@@ -182,8 +202,14 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="SCSS" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -193,11 +219,11 @@
       <recent name="C:\xampp\htdocs\campusGouda\public\scss\layout" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\xampp\htdocs\campusGouda\templates\home" />
       <recent name="C:\xampp\htdocs\campusGouda\assets\css" />
       <recent name="C:\xampp\htdocs\campusGouda\assets\js" />
       <recent name="C:\xampp\htdocs\campusGouda\public\js" />
       <recent name="C:\xampp\htdocs\campusGouda\public\css" />
+      <recent name="C:\xampp\htdocs\campusGouda\templates\home" />
     </key>
   </component>
   <component name="SvnConfiguration">
@@ -223,23 +249,14 @@
       <workItem from="1582372237845" duration="1708000" />
       <workItem from="1583075044065" duration="1042000" />
       <workItem from="1583308209766" duration="1604000" />
-      <workItem from="1583793377391" duration="511000" />
-      <workItem from="1583793926522" duration="378000" />
-      <workItem from="1583795651629" duration="1075000" />
-      <workItem from="1584893220184" duration="464000" />
-      <workItem from="1585125208904" duration="200000" />
-      <workItem from="1585727859543" duration="636000" />
-      <workItem from="1585734793695" duration="217000" />
-      <workItem from="1585740941954" duration="605000" />
-      <workItem from="1585745779717" duration="3090000" />
-      <workItem from="1585809737982" duration="1198000" />
-      <workItem from="1586205752211" duration="1506000" />
-      <workItem from="1586335590007" duration="595000" />
+      <workItem from="1586083919601" duration="2879000" />
+      <workItem from="1586260395996" duration="52000" />
+      <workItem from="1586333715259" duration="1891000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="1" />
+    <option name="version" value="2" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
@@ -273,36 +290,55 @@
     <state x="690" y="181" key="FileChooserDialogImpl/-550.1152.1280.704/-2048.0.2048.1112/0.0.2048.1112/2048.0.2048.1112@0.0.2048.1112" timestamp="1585742604223" />
     <state x="690" y="179" key="FileChooserDialogImpl/-9.1152.1280.698/2048.0.2048.1112/0.0.2048.1098@0.0.2048.1098" timestamp="1583794302709" />
     <state x="431" y="111" key="FileChooserDialogImpl/0.0.1280.680@0.0.1280.680" timestamp="1586208727838" />
-    <state width="2005" height="308" key="GridCell.Tab.0.bottom" timestamp="1582099069829">
+    <state width="1002" height="306" key="GridCell.Tab.0.bottom" timestamp="1586851047371">
       <screen x="0" y="0" width="2048" height="1112" />
     </state>
     <state width="2005" height="308" key="GridCell.Tab.0.bottom/-302.1440.1280.700/0.0.2048.1112/2560.178.1920.1040/-1920.116.1920.1040@0.0.2048.1112" timestamp="1582099069829" />
-    <state width="2005" height="308" key="GridCell.Tab.0.center" timestamp="1582099069829">
+    <state width="1002" height="306" key="GridCell.Tab.0.bottom/-550.1152.1280.704/-2048.0.2048.1112/0.0.2048.1112/2048.0.2048.1112@0.0.2048.1112" timestamp="1586851047371" />
+    <state width="1002" height="306" key="GridCell.Tab.0.center" timestamp="1586851047370">
       <screen x="0" y="0" width="2048" height="1112" />
     </state>
     <state width="2005" height="308" key="GridCell.Tab.0.center/-302.1440.1280.700/0.0.2048.1112/2560.178.1920.1040/-1920.116.1920.1040@0.0.2048.1112" timestamp="1582099069829" />
-    <state width="2005" height="308" key="GridCell.Tab.0.left" timestamp="1582099069829">
+    <state width="1002" height="306" key="GridCell.Tab.0.center/-550.1152.1280.704/-2048.0.2048.1112/0.0.2048.1112/2048.0.2048.1112@0.0.2048.1112" timestamp="1586851047370" />
+    <state width="1002" height="306" key="GridCell.Tab.0.left" timestamp="1586851047370">
       <screen x="0" y="0" width="2048" height="1112" />
     </state>
     <state width="2005" height="308" key="GridCell.Tab.0.left/-302.1440.1280.700/0.0.2048.1112/2560.178.1920.1040/-1920.116.1920.1040@0.0.2048.1112" timestamp="1582099069829" />
-    <state width="2005" height="308" key="GridCell.Tab.0.right" timestamp="1582099069829">
+    <state width="1002" height="306" key="GridCell.Tab.0.left/-550.1152.1280.704/-2048.0.2048.1112/0.0.2048.1112/2048.0.2048.1112@0.0.2048.1112" timestamp="1586851047370" />
+    <state width="1002" height="306" key="GridCell.Tab.0.right" timestamp="1586851047371">
       <screen x="0" y="0" width="2048" height="1112" />
     </state>
     <state width="2005" height="308" key="GridCell.Tab.0.right/-302.1440.1280.700/0.0.2048.1112/2560.178.1920.1040/-1920.116.1920.1040@0.0.2048.1112" timestamp="1582099069829" />
-    <state x="153" y="0" key="SettingsEditor" timestamp="1582188532775">
-      <screen x="0" y="0" width="1280" height="680" />
+    <state width="1002" height="306" key="GridCell.Tab.0.right/-550.1152.1280.704/-2048.0.2048.1112/0.0.2048.1112/2048.0.2048.1112@0.0.2048.1112" timestamp="1586851047371" />
+    <state x="593" y="133" key="RollbackChangesDialog" timestamp="1586011235051">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="593" y="133" key="RollbackChangesDialog/0.0.1536.824/-373.-1440.2560.1400@0.0.1536.824" timestamp="1586011235051" />
+    <state x="184" y="0" key="SettingsEditor" timestamp="1586011209039">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="245" y="0" key="SettingsEditor/-302.1440.1280.700/0.0.2048.1112/2560.178.1920.1040/-1920.116.1920.1040@0.0.2048.1112" timestamp="1582096512016" />
     <state x="153" y="0" key="SettingsEditor/0.0.1280.680@0.0.1280.680" timestamp="1582188532775" />
+    <state x="184" y="0" key="SettingsEditor/0.0.1536.824/-373.-1440.2560.1400@0.0.1536.824" timestamp="1586011209039" />
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1585997877941">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824/-373.-1440.2560.1400@0.0.1536.824" timestamp="1585997877941" />
+    <state x="425" y="187" key="run.anything.popup" timestamp="1586015481933">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="425" y="187" key="run.anything.popup/0.0.1536.824/-373.-1440.2560.1400@0.0.1536.824" timestamp="1586015481933" />
     <state x="244" y="7" key="scopes" timestamp="1582016416554">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="244" y="7" key="scopes/0.0.1280.680@0.0.1280.680" timestamp="1582016416554" />
-    <state x="485" y="2" width="1076" height="1109" key="search.everywhere.popup" timestamp="1582098421606">
-      <screen x="0" y="0" width="2048" height="1112" />
+    <state x="162" y="22" width="807" height="822" key="search.everywhere.popup" timestamp="1586085668922">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="485" y="2" width="1076" height="1109" key="search.everywhere.popup/-302.1440.1280.700/0.0.2048.1112/2560.178.1920.1040/-1920.116.1920.1040@0.0.2048.1112" timestamp="1582098421606" />
     <state x="303" y="1" width="672" height="678" key="search.everywhere.popup/0.0.1280.680@0.0.1280.680" timestamp="1582028938226" />
+    <state x="162" y="22" width="807" height="822" key="search.everywhere.popup/0.0.1536.824/-373.-1440.2560.1400@0.0.1536.824" timestamp="1586012107535" />
+    <state x="162" y="22" width="807" height="822" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1586085668922" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
