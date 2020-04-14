@@ -1,17 +1,14 @@
-// create global $ and jQuery variables
-global.$ = global.jQuery = $;
-
 // any CSS you import will output into a single css file (app.css in this case)
-import  '../css/bootstrap.min.css'
-import '../css/aos.css'
-import '../css/tiny-slider.css'
+import  '../scss/main.scss'
 import '../css/app.css';
 import './aos.js';
 import './tiny-slider.js';
-import './bootstrap.min.js';
-import './popper.min.js';
+
 import './jquery.easing.compatibility.js';
 import './jquery.easing.min.js';
+
+// create global $ and jQuery variables
+const $ = require (jQuery);
 
 (function ($) {
     "use strict"; // Start of use strict
