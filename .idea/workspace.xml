@@ -3,26 +3,11 @@
   <component name="ChangeListManager">
     <list default="true" id="e66536b3-0420-422e-bb44-7550516d9eb6" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/css/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/app.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/css/bootstrap.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/css/bootstrap.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/css/bootstrap.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/css/bootstrap.min.css.map" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/js/bootstrap.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/js/popper.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/scss/base/_page.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/scss/base/_page.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/scss/base/_vars.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/scss/base/_vars.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/scss/components/_buttons.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/scss/components/_buttons.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/scss/components/_footer.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/scss/components/_footer.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/scss/components/_navbar.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/scss/components/_navbar.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/scss/layout/_banner.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/scss/layout/_banner.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/scss/layout/_contact.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/scss/layout/_contact.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/scss/layout/_style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/scss/layout/_style.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/scss/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/scss/main.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/scss/main.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/assets/scss/main.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/scss/main.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/scss/main.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/jquery.easing.compatibility.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/jquery.easing.compatibility.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/jquery.easing.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/jquery.easing.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/jquery.easing.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/jquery.easing.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html.twig" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -213,10 +198,10 @@
       <recent name="C:\xampp\htdocs\campusGouda\templates\home" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\campusGouda\public\js" />
       <recent name="C:\xampp\htdocs\campusGouda\assets" />
       <recent name="C:\xampp\htdocs\campusGouda\assets\css" />
       <recent name="C:\xampp\htdocs\campusGouda\assets\js" />
-      <recent name="C:\xampp\htdocs\campusGouda\public\js" />
       <recent name="C:\xampp\htdocs\campusGouda\public\scss\layout" />
     </key>
   </component>
@@ -247,7 +232,7 @@
       <workItem from="1586260395996" duration="52000" />
       <workItem from="1586333715259" duration="1891000" />
       <workItem from="1586850957891" duration="3051000" />
-      <workItem from="1586858560909" duration="707000" />
+      <workItem from="1586858560909" duration="1587000" />
     </task>
     <servers />
   </component>

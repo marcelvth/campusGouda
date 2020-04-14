@@ -64,8 +64,10 @@
     </footer>
 
     {{ encore_entry_script_tags('app') }}
-    {% block javascripts %}
 
+    {% block javascripts %}
+        <script src="js/jquery.easing.min.js"></script>
+        <script src="js/jquery.easing.compatibility.js"></script>
     {% endblock %}
 </body>
 </html>

@@ -1,14 +1,14 @@
-// any CSS you import will output into a single css file (app.css in this case)
-import  '../scss/main.scss'
+// create global $ and jQuery variables
+const $ = require('jquery');
+
+require('bootstrap');
+
+import '../scss/main.scss';
 import '../css/app.css';
+
 import './aos.js';
 import './tiny-slider.js';
 
-import './jquery.easing.compatibility.js';
-import './jquery.easing.min.js';
-
-// create global $ and jQuery variables
-const $ = require (jQuery);
 
 (function ($) {
     "use strict"; // Start of use strict
