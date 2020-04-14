@@ -1,18 +1,42 @@
 .btn {
   font-weight: 700;
+  border-radius: 0;
 }
-a.btn {
-  color: $white !important;
-}
+//a.btn {
+//  color: $white !important;
+//}
 .btn-xl {
   font-size: 18px;
   padding: 20px 40px;
 }
 
-.btn-primary {
+.readMore:hover {
+  border: $red;
+}
+
+.btn-outline-danger {
+  background-color: $white;
+  border-width: 2px;
+
+&:active, &:focus, &:hover {
+    background-color: $red;
+    border-color: darken($white, 7.5%) !important;
+  //  color: $white;
+  }
+  //
+  //&:active, &:focus {
+  //  //box-shadow: 0 0 0 0.2rem rgba(254, 209, 55, 0.5) !important;
+  //}
+  //
+  //&:disabled {
+  //  //background-color: rgb(216, 205, 184);
+  //  border-color: darken($red, 25%);
+  //}
+}
+
+.btn-danger {
   background-color: $red;
   border-color: $red;
-
 
   &:active, &:focus, &:hover {
     background-color: darken($red, 7.5%) !important;
