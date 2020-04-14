@@ -3,11 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="e66536b3-0420-422e-bb44-7550516d9eb6" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/js/jquery.easing.compatibility.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/jquery.easing.compatibility.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/js/jquery.easing.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/jquery.easing.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/js/jquery.easing.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/jquery.easing.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/app.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -232,7 +228,7 @@
       <workItem from="1586260395996" duration="52000" />
       <workItem from="1586333715259" duration="1891000" />
       <workItem from="1586850957891" duration="3051000" />
-      <workItem from="1586858560909" duration="1587000" />
+      <workItem from="1586858560909" duration="1728000" />
     </task>
     <servers />
   </component>
