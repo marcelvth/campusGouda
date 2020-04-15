@@ -5,7 +5,7 @@
       display: inline-block;
       svg {
         height: 40px;
-        fill: $red;
+        fill: $primary;
 
         &:focus,
         &:hover {
@@ -21,11 +21,11 @@
 .banner_box2 {
   height: 50px;
   width: 170px;
-  background-color: #DE3232;
+  background-color: $primary;
   cursor: pointer;
 
   .title {
-    background-color: $red;
+    background-color: $primary;
   }
 
 }
@@ -45,7 +45,7 @@ a {
 }
 
 .text-title {
-  color: #DE3232;
+  color: $primary;
 }
 
 .section1 {
@@ -67,7 +67,7 @@ a {
 }
 
 footer {
-  background-color: #DE3232;
+  background-color: $primary;
   width: 100%;
   display: flex;
   justify-content: center;
