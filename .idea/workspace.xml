@@ -2,323 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e66536b3-0420-422e-bb44-7550516d9eb6" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/assets/fonts/DIN 2014.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/fonts/DIN2014.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/fonts/DIN2014.otf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/fonts/DIN2014.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/fonts/DIN2014.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/fonts/DIN2014.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/bootstrap/.babelrc.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/bootstrap/.bower.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/bootstrap/.editorconfig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/bootstrap/.eslintignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/bootstrap/.eslintrc.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/bootstrap/.gitattributes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/bootstrap/.github/CONTRIBUTING.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/bootstrap/.github/ISSUE_TEMPLATE/bug.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/bootstrap/.github/ISSUE_TEMPLATE/feature.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/bootstrap/.github/SUPPORT.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/bootstrap/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/bootstrap/.stylelintignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/bootstrap/.stylelintrc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/bootstrap/.travis.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/bootstrap/CNAME" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/bootstrap/CODE_OF_CONDUCT.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/bootstrap/Gemfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/bootstrap/Gemfile.lock" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/bootstrap/LICENSE" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/bootstrap/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/bootstrap/_config.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/bootstrap/_data/breakpoints.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/bootstrap/_data/browser-bugs.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/bootstrap/_data/browser-features.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/bootstrap/_data/colors.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/bootstrap/_data/examples.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/bootstrap/_data/grays.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/bootstrap/_data/nav.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/bootstrap/_data/theme-colors.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/bootstrap/_data/translations.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/bootstrap/_includes/ads.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/bootstrap/_includes/bugify.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/bootstrap/_includes/callout-danger-async-methods.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/bootstrap/_includes/callout-info-mediaqueries-breakpoints.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/bootstrap/_includes/callout-warning-color-assistive-technologies.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/bootstrap/_includes/callout.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/bootstrap/_includes/docs-navbar.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/bootstrap/_includes/docs-sidebar.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/bootstrap/_includes/example.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/bootstrap/_includes/favicons.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/bootstrap/_includes/footer.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/bootstrap/_includes/header.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/bootstrap/_includes/icons/bootstrap.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/bootstrap/_includes/icons/download.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/bootstrap/_includes/icons/github.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/bootstrap/_includes/icons/import.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/bootstrap/_includes/icons/lightning.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/bootstrap/_includes/icons/menu.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/bootstrap/_includes/icons/slack.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/bootstrap/_includes/icons/twitter.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/bootstrap/_includes/scripts.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/bootstrap/_includes/skippy.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/bootstrap/_includes/social.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/bootstrap/_layouts/default.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/bootstrap/_layouts/docs.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/bootstrap/_layouts/examples.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/bootstrap/_layouts/home.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/bootstrap/_layouts/redirect.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/bootstrap/_layouts/simple.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/bootstrap/assets/brand/bootstrap-outline.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/bootstrap/assets/brand/bootstrap-punchout.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/bootstrap/assets/brand/bootstrap-social-logo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/bootstrap/assets/brand/bootstrap-social.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/bootstrap/assets/brand/bootstrap-solid.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/bootstrap/assets/css/docs.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/bootstrap/assets/css/docs.min.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/bootstrap/assets/img/bootstrap-stack.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/bootstrap/assets/img/bootstrap-themes.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/bootstrap/assets/img/favicons/android-chrome-192x192.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/bootstrap/assets/img/favicons/android-chrome-512x512.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/bootstrap/assets/img/favicons/apple-touch-icon.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/bootstrap/assets/img/favicons/browserconfig.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/bootstrap/assets/img/favicons/favicon-16x16.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/bootstrap/assets/img/favicons/favicon-32x32.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/bootstrap/assets/img/favicons/manifest.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/bootstrap/assets/img/favicons/mstile-144x144.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/bootstrap/assets/img/favicons/mstile-150x150.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/bootstrap/assets/img/favicons/mstile-310x150.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/bootstrap/assets/img/favicons/mstile-310x310.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/bootstrap/assets/img/favicons/mstile-70x70.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/bootstrap/assets/img/favicons/safari-pinned-tab.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/bootstrap/assets/js/.eslintrc.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/bootstrap/assets/js/docs.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/bootstrap/assets/js/src/application.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/bootstrap/assets/js/src/ie-emulation-modes-warning.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/bootstrap/assets/js/src/pwa.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/bootstrap/assets/js/vendor/anchor.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/bootstrap/assets/js/vendor/clipboard.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/bootstrap/assets/js/vendor/holder.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/bootstrap/assets/js/vendor/jquery-slim.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/bootstrap/assets/js/vendor/popper.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/bootstrap/assets/scss/_ads.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/bootstrap/assets/scss/_algolia.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/bootstrap/assets/scss/_anchor.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/bootstrap/assets/scss/_brand.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/bootstrap/assets/scss/_browser-bugs.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/bootstrap/assets/scss/_buttons.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/bootstrap/assets/scss/_callouts.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/bootstrap/assets/scss/_clipboard-js.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/bootstrap/assets/scss/_colors.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/bootstrap/assets/scss/_component-examples.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/bootstrap/assets/scss/_content.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/bootstrap/assets/scss/_examples.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/bootstrap/assets/scss/_footer.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/bootstrap/assets/scss/_masthead.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/bootstrap/assets/scss/_nav.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/bootstrap/assets/scss/_sidebar.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/bootstrap/assets/scss/_skiplink.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/bootstrap/assets/scss/_syntax.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/bootstrap/assets/scss/_variables.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/bootstrap/assets/scss/docs.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/bootstrap/build/.eslintrc.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/bootstrap/build/.htmllintrc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/bootstrap/build/change-version.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/bootstrap/build/gcp-key.json.enc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/bootstrap/build/generate-sri.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/bootstrap/build/lint-vars.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/bootstrap/build/postcss.config.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/bootstrap/build/rollup.config.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/bootstrap/build/sauce_browsers.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/bootstrap/build/saucelabs-unit-test.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/bootstrap/build/ship.sh" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/bootstrap/build/upload-preview.sh" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/bootstrap/build/vnu-jar.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/bootstrap/build/workbox.config.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/bootstrap/build/workbox.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/bootstrap/composer.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/bootstrap/dist/css/bootstrap-grid.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/bootstrap/dist/css/bootstrap-grid.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/bootstrap/dist/css/bootstrap-grid.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/bootstrap/dist/css/bootstrap-grid.min.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/bootstrap/dist/css/bootstrap-reboot.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/bootstrap/dist/css/bootstrap-reboot.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/bootstrap/dist/css/bootstrap-reboot.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/bootstrap/dist/css/bootstrap-reboot.min.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/bootstrap/dist/css/bootstrap.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/bootstrap/dist/css/bootstrap.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/bootstrap/dist/css/bootstrap.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/bootstrap/dist/css/bootstrap.min.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/bootstrap/dist/js/bootstrap.bundle.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/bootstrap/dist/js/bootstrap.bundle.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/bootstrap/dist/js/bootstrap.bundle.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/bootstrap/dist/js/bootstrap.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/bootstrap/dist/js/bootstrap.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/bootstrap/dist/js/bootstrap.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/bootstrap/dist/js/bootstrap.min.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/bootstrap/favicon.ico" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/bootstrap/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/bootstrap/js/dist/alert.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/bootstrap/js/dist/alert.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/bootstrap/js/dist/button.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/bootstrap/js/dist/button.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/bootstrap/js/dist/carousel.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/bootstrap/js/dist/carousel.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/bootstrap/js/dist/collapse.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/bootstrap/js/dist/collapse.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/bootstrap/js/dist/dropdown.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/bootstrap/js/dist/dropdown.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/bootstrap/js/dist/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/bootstrap/js/dist/index.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/bootstrap/js/dist/modal.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/bootstrap/js/dist/modal.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/bootstrap/js/dist/popover.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/bootstrap/js/dist/popover.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/bootstrap/js/dist/scrollspy.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/bootstrap/js/dist/scrollspy.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/bootstrap/js/dist/tab.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/bootstrap/js/dist/tab.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/bootstrap/js/dist/tooltip.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/bootstrap/js/dist/tooltip.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/bootstrap/js/dist/util.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/bootstrap/js/dist/util.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/bootstrap/js/src/alert.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/bootstrap/js/src/button.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/bootstrap/js/src/carousel.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/bootstrap/js/src/collapse.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/bootstrap/js/src/dropdown.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/bootstrap/js/src/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/bootstrap/js/src/modal.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/bootstrap/js/src/popover.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/bootstrap/js/src/scrollspy.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/bootstrap/js/src/tab.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/bootstrap/js/src/tooltip.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/bootstrap/js/src/util.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/bootstrap/js/tests/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/bootstrap/js/tests/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/bootstrap/js/tests/karma-bundle.conf.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/bootstrap/js/tests/karma.conf.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/bootstrap/js/tests/unit/.eslintrc.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/bootstrap/js/tests/unit/alert.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/bootstrap/js/tests/unit/button.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/bootstrap/js/tests/unit/carousel.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/bootstrap/js/tests/unit/collapse.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/bootstrap/js/tests/unit/dropdown.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/bootstrap/js/tests/unit/modal.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/bootstrap/js/tests/unit/popover.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/bootstrap/js/tests/unit/scrollspy.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/bootstrap/js/tests/unit/tab.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/bootstrap/js/tests/unit/tooltip.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/bootstrap/js/tests/unit/util.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/bootstrap/js/tests/visual/alert.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/bootstrap/js/tests/visual/button.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/bootstrap/js/tests/visual/carousel.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/bootstrap/js/tests/visual/collapse.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/bootstrap/js/tests/visual/dropdown.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/bootstrap/js/tests/visual/modal.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/bootstrap/js/tests/visual/popover.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/bootstrap/js/tests/visual/scrollspy.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/bootstrap/js/tests/visual/tab.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/bootstrap/js/tests/visual/tooltip.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/bootstrap/nuget/MyGet.ps1" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/bootstrap/nuget/bootstrap.nuspec" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/bootstrap/nuget/bootstrap.sass.nuspec" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/bootstrap/package-lock.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/bootstrap/package.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/bootstrap/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/bootstrap/robots.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/bootstrap/sache.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/bootstrap/scss/_alert.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/bootstrap/scss/_badge.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/bootstrap/scss/_breadcrumb.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/bootstrap/scss/_button-group.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/bootstrap/scss/_buttons.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/bootstrap/scss/_card.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/bootstrap/scss/_carousel.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/bootstrap/scss/_close.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/bootstrap/scss/_code.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/bootstrap/scss/_custom-forms.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/bootstrap/scss/_dropdown.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/bootstrap/scss/_forms.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/bootstrap/scss/_functions.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/bootstrap/scss/_grid.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/bootstrap/scss/_images.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/bootstrap/scss/_input-group.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/bootstrap/scss/_jumbotron.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/bootstrap/scss/_list-group.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/bootstrap/scss/_media.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/bootstrap/scss/_mixins.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/bootstrap/scss/_modal.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/bootstrap/scss/_nav.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/bootstrap/scss/_navbar.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/bootstrap/scss/_pagination.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/bootstrap/scss/_popover.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/bootstrap/scss/_print.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/bootstrap/scss/_progress.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/bootstrap/scss/_reboot.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/bootstrap/scss/_root.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/bootstrap/scss/_tables.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/bootstrap/scss/_tooltip.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/bootstrap/scss/_transitions.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/bootstrap/scss/_type.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/bootstrap/scss/_utilities.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/bootstrap/scss/_variables.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/bootstrap/scss/bootstrap-grid.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/bootstrap/scss/bootstrap-reboot.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/bootstrap/scss/bootstrap.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/bootstrap/scss/mixins/_alert.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/bootstrap/scss/mixins/_background-variant.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/bootstrap/scss/mixins/_badge.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/bootstrap/scss/mixins/_border-radius.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/bootstrap/scss/mixins/_box-shadow.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/bootstrap/scss/mixins/_breakpoints.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/bootstrap/scss/mixins/_buttons.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/bootstrap/scss/mixins/_caret.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/bootstrap/scss/mixins/_clearfix.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/bootstrap/scss/mixins/_float.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/bootstrap/scss/mixins/_forms.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/bootstrap/scss/mixins/_gradients.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/bootstrap/scss/mixins/_grid-framework.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/bootstrap/scss/mixins/_grid.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/bootstrap/scss/mixins/_hover.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/bootstrap/scss/mixins/_image.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/bootstrap/scss/mixins/_list-group.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/bootstrap/scss/mixins/_lists.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/bootstrap/scss/mixins/_nav-divider.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/bootstrap/scss/mixins/_pagination.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/bootstrap/scss/mixins/_reset-text.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/bootstrap/scss/mixins/_resize.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/bootstrap/scss/mixins/_screen-reader.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/bootstrap/scss/mixins/_size.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/bootstrap/scss/mixins/_table-row.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/bootstrap/scss/mixins/_text-emphasis.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/bootstrap/scss/mixins/_text-hide.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/bootstrap/scss/mixins/_text-truncate.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/bootstrap/scss/mixins/_transition.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/bootstrap/scss/mixins/_visibility.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/bootstrap/scss/utilities/_align.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/bootstrap/scss/utilities/_background.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/bootstrap/scss/utilities/_borders.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/bootstrap/scss/utilities/_clearfix.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/bootstrap/scss/utilities/_display.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/bootstrap/scss/utilities/_embed.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/bootstrap/scss/utilities/_flex.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/bootstrap/scss/utilities/_float.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/bootstrap/scss/utilities/_position.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/bootstrap/scss/utilities/_screenreaders.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/bootstrap/scss/utilities/_shadows.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/bootstrap/scss/utilities/_sizing.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/bootstrap/scss/utilities/_spacing.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/bootstrap/scss/utilities/_text.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/bootstrap/scss/utilities/_visibility.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/bootstrap/sw.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/scss/base/_mixxins.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/scss/base/_mixins.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/app.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/fonts/DIN 2014.woff2" beforeDir="false" afterPath="$PROJECT_DIR$/public/fonts/DIN2014.woff2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/fonts/DIN2014.eot" beforeDir="false" afterPath="$PROJECT_DIR$/public/fonts/DIN2014.eot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/fonts/DIN2014.otf" beforeDir="false" afterPath="$PROJECT_DIR$/public/fonts/DIN2014.otf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/fonts/DIN2014.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/fonts/DIN2014.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/fonts/DIN2014.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/public/fonts/DIN2014.ttf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/fonts/DIN2014.woff" beforeDir="false" afterPath="$PROJECT_DIR$/public/fonts/DIN2014.woff" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/scss/base/_mixins.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/scss/base/_mixins.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/scss/base/_page.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/scss/base/_page.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/scss/components/_buttons.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/scss/components/_buttons.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/scss/components/_navbar.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/scss/components/_navbar.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/scss/layout/_banner.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/scss/layout/_banner.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/scss/layout/_contact.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/scss/layout/_contact.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/scss/main.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/scss/main.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html.twig" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -504,19 +197,19 @@
     <property name="settings.editor.selected.configurable" value="preferences.keymap" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\xampp\htdocs\campusGouda\assets" />
-      <recent name="C:\xampp\htdocs\campusGouda\public\js" />
-      <recent name="C:\xampp\htdocs\campusGouda\assets\css" />
-      <recent name="C:\xampp\htdocs\campusGouda\assets\js" />
-      <recent name="C:\xampp\htdocs\campusGouda\public\scss\layout" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\xampp\htdocs\campusGouda\public\lib" />
       <recent name="C:\xampp\htdocs\campusGouda\public\Fonts" />
       <recent name="C:\xampp\htdocs\campusGouda\assets\css" />
       <recent name="C:\xampp\htdocs\campusGouda\assets\js" />
       <recent name="C:\xampp\htdocs\campusGouda\public\js" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\campusGouda\public" />
+      <recent name="C:\xampp\htdocs\campusGouda\assets" />
+      <recent name="C:\xampp\htdocs\campusGouda\public\js" />
+      <recent name="C:\xampp\htdocs\campusGouda\assets\css" />
+      <recent name="C:\xampp\htdocs\campusGouda\assets\js" />
     </key>
   </component>
   <component name="SvnConfiguration">
