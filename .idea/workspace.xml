@@ -1,16 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e66536b3-0420-422e-bb44-7550516d9eb6" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/public/img/CG_Logo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/CG_Logo_clean.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/svg/CG_Logo.svg" afterDir="false" />
+    <list default="true" id="e66536b3-0420-422e-bb44-7550516d9eb6" name="Default Changelist" comment="minor update">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/scss/base/_page.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/scss/base/_page.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/scss/components/_navbar.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/scss/components/_navbar.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/logo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/logo.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/scss/layout/_banner.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/scss/layout/_banner.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webpack.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/webpack.config.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,6 +49,9 @@
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="PackageJsonUpdateNotifier">
+    <dismissed value="$PROJECT_DIR$/package.json" />
   </component>
   <component name="PhpWorkspaceProjectConfiguration">
     <include_path>
@@ -183,7 +183,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/public/img" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="SCSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -209,6 +209,34 @@
       <recent name="C:\xampp\htdocs\campusGouda\assets\css" />
       <recent name="C:\xampp\htdocs\campusGouda\assets\js" />
     </key>
+  </component>
+  <component name="RunManager" selected="npm.dev">
+    <configuration name="dev-server" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="dev-server" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <configuration name="dev" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="dev" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="npm.dev" />
+        <item itemvalue="npm.dev-server" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -241,6 +269,8 @@
       <workItem from="1586851614377" duration="4242000" />
       <workItem from="1586937583386" duration="13000" />
       <workItem from="1586938500523" duration="855000" />
+      <workItem from="1586949405662" duration="1046000" />
+      <workItem from="1586951947034" duration="1031000" />
     </task>
     <servers />
   </component>
@@ -249,6 +279,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="minor update" />
+    <option name="LAST_COMMIT_MESSAGE" value="minor update" />
   </component>
   <component name="WindowStateProjectService">
     <state x="234" y="4" key="#File_Watchers" timestamp="1582015553555">
@@ -270,9 +302,10 @@
     <state x="595" y="150" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/-302.1440.1280.700/0.0.2048.1112/2560.178.1920.1040/-1920.116.1920.1040@0.0.2048.1112" timestamp="1582097496681" />
     <state x="595" y="150" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/-550.1152.1280.704/-2048.0.2048.1112/0.0.2048.1112/2048.0.2048.1112@0.0.2048.1112" timestamp="1586947786440" />
     <state x="372" y="92" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1280.680@0.0.1280.680" timestamp="1582015913207" />
-    <state x="262" y="0" key="CommitChangelistDialog2" timestamp="1582370535845">
-      <screen x="0" y="0" width="1280" height="680" />
+    <state x="61" y="99" width="1647" height="811" key="CommitChangelistDialog2" timestamp="1586952958461">
+      <screen x="0" y="0" width="2048" height="1112" />
     </state>
+    <state x="61" y="99" width="1647" height="811" key="CommitChangelistDialog2/-550.1152.1280.704/-2048.0.2048.1112/0.0.2048.1112/2048.0.2048.1112@0.0.2048.1112" timestamp="1586952958461" />
     <state x="262" y="0" key="CommitChangelistDialog2/0.0.1280.680@0.0.1280.680" timestamp="1582370535844" />
     <state x="389" y="62" width="719" height="598" key="EditFileWatcherDialog" timestamp="1582017210589">
       <screen x="0" y="0" width="1280" height="680" />
@@ -284,26 +317,26 @@
     <state x="690" y="181" key="FileChooserDialogImpl/-550.1152.1280.704/-2048.0.2048.1112/0.0.2048.1112/2048.0.2048.1112@0.0.2048.1112" timestamp="1585742604223" />
     <state x="690" y="179" key="FileChooserDialogImpl/-9.1152.1280.698/2048.0.2048.1112/0.0.2048.1098@0.0.2048.1098" timestamp="1583794302709" />
     <state x="431" y="111" key="FileChooserDialogImpl/0.0.1280.680@0.0.1280.680" timestamp="1586208727838" />
-    <state width="1002" height="306" key="GridCell.Tab.0.bottom" timestamp="1586851047371">
+    <state width="1002" height="306" key="GridCell.Tab.0.bottom" timestamp="1586951888422">
       <screen x="0" y="0" width="2048" height="1112" />
     </state>
     <state width="2005" height="308" key="GridCell.Tab.0.bottom/-302.1440.1280.700/0.0.2048.1112/2560.178.1920.1040/-1920.116.1920.1040@0.0.2048.1112" timestamp="1582099069829" />
-    <state width="1002" height="306" key="GridCell.Tab.0.bottom/-550.1152.1280.704/-2048.0.2048.1112/0.0.2048.1112/2048.0.2048.1112@0.0.2048.1112" timestamp="1586851047371" />
-    <state width="1002" height="306" key="GridCell.Tab.0.center" timestamp="1586851047370">
+    <state width="1002" height="306" key="GridCell.Tab.0.bottom/-550.1152.1280.704/-2048.0.2048.1112/0.0.2048.1112/2048.0.2048.1112@0.0.2048.1112" timestamp="1586951888422" />
+    <state width="1002" height="306" key="GridCell.Tab.0.center" timestamp="1586951888422">
       <screen x="0" y="0" width="2048" height="1112" />
     </state>
     <state width="2005" height="308" key="GridCell.Tab.0.center/-302.1440.1280.700/0.0.2048.1112/2560.178.1920.1040/-1920.116.1920.1040@0.0.2048.1112" timestamp="1582099069829" />
-    <state width="1002" height="306" key="GridCell.Tab.0.center/-550.1152.1280.704/-2048.0.2048.1112/0.0.2048.1112/2048.0.2048.1112@0.0.2048.1112" timestamp="1586851047370" />
-    <state width="1002" height="306" key="GridCell.Tab.0.left" timestamp="1586851047370">
+    <state width="1002" height="306" key="GridCell.Tab.0.center/-550.1152.1280.704/-2048.0.2048.1112/0.0.2048.1112/2048.0.2048.1112@0.0.2048.1112" timestamp="1586951888422" />
+    <state width="1002" height="306" key="GridCell.Tab.0.left" timestamp="1586951888422">
       <screen x="0" y="0" width="2048" height="1112" />
     </state>
     <state width="2005" height="308" key="GridCell.Tab.0.left/-302.1440.1280.700/0.0.2048.1112/2560.178.1920.1040/-1920.116.1920.1040@0.0.2048.1112" timestamp="1582099069829" />
-    <state width="1002" height="306" key="GridCell.Tab.0.left/-550.1152.1280.704/-2048.0.2048.1112/0.0.2048.1112/2048.0.2048.1112@0.0.2048.1112" timestamp="1586851047370" />
-    <state width="1002" height="306" key="GridCell.Tab.0.right" timestamp="1586851047371">
+    <state width="1002" height="306" key="GridCell.Tab.0.left/-550.1152.1280.704/-2048.0.2048.1112/0.0.2048.1112/2048.0.2048.1112@0.0.2048.1112" timestamp="1586951888422" />
+    <state width="1002" height="306" key="GridCell.Tab.0.right" timestamp="1586951888422">
       <screen x="0" y="0" width="2048" height="1112" />
     </state>
     <state width="2005" height="308" key="GridCell.Tab.0.right/-302.1440.1280.700/0.0.2048.1112/2560.178.1920.1040/-1920.116.1920.1040@0.0.2048.1112" timestamp="1582099069829" />
-    <state width="1002" height="306" key="GridCell.Tab.0.right/-550.1152.1280.704/-2048.0.2048.1112/0.0.2048.1112/2048.0.2048.1112@0.0.2048.1112" timestamp="1586851047371" />
+    <state width="1002" height="306" key="GridCell.Tab.0.right/-550.1152.1280.704/-2048.0.2048.1112/0.0.2048.1112/2048.0.2048.1112@0.0.2048.1112" timestamp="1586951888422" />
     <state x="791" y="179" key="RollbackChangesDialog" timestamp="1586942898214">
       <screen x="0" y="0" width="2048" height="1112" />
     </state>
