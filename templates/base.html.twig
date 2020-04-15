@@ -3,18 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>{% block title %}Welcome!{% endblock %}</title>
-
+    <title>{% block title %}{% endblock %}Campus Gouda</title>
+    <link rel="stylesheet" href="/lib/bootstrap/dist/css/bootstrap.min.css" />
     <script src="/js/aos.js"></script>
-    {{ encore_entry_link_tags('app') }}
     {% block stylesheets %}
-        <link rel="stylesheet" type="text/css" href="/scss/main.css">
+{#        <link rel="stylesheet" type="text/css" href="/scss/main.css">#}
     {% endblock %}
+    {{ encore_entry_link_tags('app') }}
 </head>
 <body>
                 <!-- Navigation -->
                 <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
-                    <a class="navbar-brand" href="#">Campus Gouda</a>
+                    <a class="navbar-brand" href="{{ path('home') }}">
+                        <img src="/img/CG_Logo_clean.png" width="30" height="30" class="d-inline-block align-top" alt="Logo">
+                        Campus Gouda
+                    </a>
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
                             aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
@@ -40,11 +43,9 @@
                     </div>
                 </nav>
 
-
         {% block body %}
 
         {% endblock %}
-
 
     <footer>
         <div class="footer">

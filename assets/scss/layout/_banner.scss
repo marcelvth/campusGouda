@@ -6,46 +6,39 @@
   background-position: center;
 }
 
+.header {
+  margin: auto;
+  padding-top: 230px;
+  h1 {
+    font-size: 72px;
+    color: $primary;
+  }
+  p {
+    font-size: 36px;
+    line-height: 42px;
+    color: $primary;
+  }
+  button {
+    padding: 0.7em 4em;
+    background: rgba(255, 255, 255, 0.6);
+  }
+  .container {
+    background-color: transparent;
+  }
+}
+
+.overgouda-jumbo {
+  background-color: $primary;
+  h2 {
+    color: $white;
+    font-weight: 500;
+    &p {
+      color: $white;
+    }
+  }
+}
 @media only screen and (min-width: 768px) {
   .banner {
     height: 100vh;
   }
-}
-
-.header {
-  margin: auto;
-  padding-top: 230px;
-}
-
-.header h1 {
-  font-size: 72px;
-  color: $red;
-}
-
-.header p {
-  font-size: 36px;
-  line-height: 42px;
-  color: $red;
-}
-
-.header button {
-  padding: 0.7em 4em;
-  background: rgba(255, 255, 255, 0.6);
-}
-
-.header .container {
-  background-color: transparent;
-}
-
-.overgouda-jumbo {
-  background-color: $red;
-}
-
-.overgouda-jumbo h2 {
-  color: $white;
-  font-weight: 500;
-}
-
-.overgouda-jumbo h2, .overgouda-jumbo p {
-  color: $white;
 }

@@ -29,7 +29,7 @@ Encore
     .enableVersioning(Encore.isProduction())
 
     // uncomment if you use TypeScript
-    //.enableTypeScriptLoader()
+    .enableTypeScriptLoader()
 
     // uncomment if you use Sass/SCSS files
     .enableSassLoader()

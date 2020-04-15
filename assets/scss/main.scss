@@ -1,6 +1,5 @@
-@import "~bootstrap/scss/bootstrap";
-
 @import "base/vars.scss";
+@import "base/mixins.scss";
 @import "base/page.scss";
 
 @import "components/navbar.scss";
@@ -10,3 +9,4 @@
 @import "layout/style.scss";
 @import "layout/banner.scss";
 @import "layout/contact.scss";
+

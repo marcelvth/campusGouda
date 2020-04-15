@@ -1,13 +1,14 @@
 *{
   padding: 0;
   margin: 0;
+  box-sizing: border-box;
 }
 
 body {
   position: relative;
   height: 100%;
-  box-sizing: border-box;
   background-color: $white;
+  font-family: din2014;
 }
 html {
   scroll-behavior: smooth;

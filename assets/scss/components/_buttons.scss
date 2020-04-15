@@ -11,18 +11,23 @@
 }
 
 .readMore:hover {
-  border: $red;
+  border: $primary;
 }
 
 .btn-outline-danger {
   background-color: $white;
   border-width: 2px;
 
-&:active, &:focus, &:hover {
-    background-color: $red;
-    border-color: darken($white, 7.5%) !important;
-  //  color: $white;
+  &:active, &:focus {
+    box-shadow: none !important;
   }
+
+ &:hover {
+  background-color: $primary;
+  border-color: darken($white, 7.5%) !important;
+  color: $white;
+}
+
   //
   //&:active, &:focus {
   //  //box-shadow: 0 0 0 0.2rem rgba(254, 209, 55, 0.5) !important;
@@ -30,17 +35,17 @@
   //
   //&:disabled {
   //  //background-color: rgb(216, 205, 184);
-  //  border-color: darken($red, 25%);
+  //  border-color: darken($primary, 25%);
   //}
 }
 
 .btn-danger {
-  background-color: $red;
-  border-color: $red;
+  background-color: $primary;
+  border-color: $primary;
 
   &:active, &:focus, &:hover {
-    background-color: darken($red, 7.5%) !important;
-    border-color: darken($red, 7.5%) !important;
+    background-color: darken($primary, 7.5%) !important;
+    border-color: darken($primary, 7.5%) !important;
     color: $white;
   }
 
@@ -50,6 +55,6 @@
 
   &:disabled {
     background-color: rgb(216, 205, 184);
-    border-color: darken($red, 25%);
+    border-color: darken($primary, 25%);
   }
 }
