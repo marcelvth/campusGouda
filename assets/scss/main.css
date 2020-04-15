@@ -81,9 +81,13 @@ html {
   background-color: #ffffff;
   border-width: 2px;
 }
-.btn-outline-danger:active, .btn-outline-danger:focus, .btn-outline-danger:hover {
+.btn-outline-danger:active, .btn-outline-danger:focus {
+  box-shadow: none !important;
+}
+.btn-outline-danger:hover {
   background-color: #DE3232;
   border-color: #ececec !important;
+  color: #ffffff;
 }
 
 .btn-danger {
