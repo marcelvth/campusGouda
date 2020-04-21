@@ -25,7 +25,7 @@ html {
 
 .text_title {
   margin-bottom: 35px;
-  color: #DE3232;
+  color: #80BA27;
   font-size: 48px;
 }
 
@@ -43,7 +43,7 @@ html {
 }
 
 #media {
-  background-color: #DE3232;
+  background-color: #80BA27;
   color: #ffffff;
 }
 
@@ -52,7 +52,7 @@ html {
 }
 
 #mainNav {
-  background-color: #DE3232;
+  background-color: #80BA27;
 }
 #mainNav .navbar-brand {
   color: #ffffff;
@@ -74,29 +74,29 @@ html {
 }
 
 .readMore:hover {
-  border: #DE3232;
+  border: #80BA27;
 }
 
 .btn-outline-danger {
   background-color: #ffffff;
-  border-width: 2px;
+  border: 2px solid #306196;
 }
 .btn-outline-danger:active, .btn-outline-danger:focus {
   box-shadow: none !important;
 }
 .btn-outline-danger:hover {
-  background-color: #DE3232;
+  background-color: #80BA27;
   border-color: #ececec !important;
   color: #ffffff;
 }
 
 .btn-danger {
-  background-color: #DE3232;
-  border-color: #DE3232;
+  background-color: #80BA27;
+  border-color: #80BA27;
 }
 .btn-danger:active, .btn-danger:focus, .btn-danger:hover {
-  background-color: #c92020 !important;
-  border-color: #c92020 !important;
+  background-color: #6a9a20 !important;
+  border-color: #6a9a20 !important;
   color: #ffffff;
 }
 .btn-danger:active, .btn-danger:focus {
@@ -104,7 +104,7 @@ html {
 }
 .btn-danger:disabled {
   background-color: #d8cdb8;
-  border-color: #7c1414;
+  border-color: #375111;
 }
 
 footer {
@@ -121,7 +121,7 @@ footer {
 }
 #media ul li svg {
   height: 40px;
-  fill: #DE3232;
+  fill: #80BA27;
 }
 #media ul li svg:focus, #media ul li svg:hover {
   transform: translate3d(0, -3px, 0);
@@ -131,11 +131,11 @@ footer {
 .banner_box2 {
   height: 50px;
   width: 170px;
-  background-color: #DE3232;
+  background-color: #80BA27;
   cursor: pointer;
 }
 .banner_box2 .title {
-  background-color: #DE3232;
+  background-color: #80BA27;
 }
 
 .box_text {
@@ -152,7 +152,7 @@ a:hover {
 }
 
 .text-title {
-  color: #DE3232;
+  color: #80BA27;
 }
 
 .section1 {
@@ -173,7 +173,7 @@ a:hover {
 }
 
 footer {
-  background-color: #DE3232;
+  background-color: #80BA27;
   width: 100%;
   display: flex;
   justify-content: center;
@@ -202,13 +202,13 @@ footer {
 
 .header h1 {
   font-size: 72px;
-  color: #DE3232;
+  color: #80BA27;
 }
 
 .header p {
   font-size: 36px;
   line-height: 42px;
-  color: #DE3232;
+  color: #80BA27;
 }
 
 .header button {
@@ -221,7 +221,7 @@ footer {
 }
 
 .overgouda-jumbo {
-  background-color: #DE3232;
+  background-color: #80BA27;
 }
 
 .overgouda-jumbo h2 {
@@ -252,7 +252,7 @@ section#contact .form-group textarea.form-control {
   height: 248px;
 }
 section#contact .form-control:focus {
-  border-color: #DE3232;
+  border-color: #CBDE9B;
   box-shadow: none;
 }
 section#contact ::-webkit-input-placeholder, section#contact :-moz-placeholder, section#contact ::-moz-placeholder, section#contact :-ms-input-placeholder {

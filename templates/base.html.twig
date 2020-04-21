@@ -7,68 +7,110 @@
     <link rel="stylesheet" href="/lib/bootstrap/dist/css/bootstrap.min.css" />
     <script src="/js/aos.js"></script>
     {% block stylesheets %}
-{#        <link rel="stylesheet" type="text/css" href="/scss/main.css">#}
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+              integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+              crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="/assets/scss/main.scss">
+        <link rel="stylesheet" type="text/css" href="/node_modules/bootstrap/scss/bootstrap.scss">
     {% endblock %}
     {{ encore_entry_link_tags('app') }}
 </head>
 <body>
-                <!-- Navigation -->
-                <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
-                    <a class="navbar-brand" href="{{ path('home') }}">
-                        <img src="/img/CG_Logo_clean.png" width="30" height="30" class="d-inline-block align-top" alt="Logo">
-                        Campus Gouda
-                    </a>
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
-                            aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarResponsive">
-                        <ul class="navbar-nav ml-auto">
-                            <li class="nav-item active">
-                                <a class="nav-link" href="{{ path('home') }}">Home</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#blog">Blog</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#overgouda">Over Gouda</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#media">Media</a>
-                            </li>
-                        </ul>
-                        <div class="ml-5">
-                            <a href="{{ path('contact') }}" class="btn btn-outline-danger" role="button">Contact</a>
-                        </div>
-                    </div>
-                </nav>
+<!-- Navigation -->
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+    <a class="navbar-brand" href="#">Campus Gouda</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+            aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+                <a class="nav-link" href="{{ path('home') }}">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#blog">Blog</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#overgouda">Over Gouda</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#media">Media</a>
+            </li>
+        </ul>
+        <div class="ml-5">
+            <a href="#contact" class="btn btn-outline-danger" role="button">Contact</a>
+        </div>
+    </div>
+</nav>
 
-        {% block body %}
 
-        {% endblock %}
+{% block body %}
 
-    <footer>
-        <div class="footer">
-            <div class="container">
-                <div class="row">
-                    <div class="col-sm-12 col-lg-4">
+{% endblock %}
 
-                    </div>
-                    <div class="col-sm-12 col-lg-4">
-                    </div>
-                    <div class="col-sm-12 col-lg-4">
+<section id="contact">
+    <div class="container pt-4">
+        <div class="row">
+            <div class="col-sm-12 col-lg-5">
+                <h3 class="text_title">Contact</h3>
+                <p>Je kunt met gemeente Gouda vrijblijvend contact opnemen.</p>
+            </div>
+            <div class="col-md-12">
+                {{ form_start(form) }}
+                {{ form_widget(form) }}
+                {{ form_end(form) }}
 
-                    </div>
+                <input type="submit" value="Verstuur" class="btn btn-lg btn-outline-danger mb-4">
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<footer>
+    <div class="footer py-4 bg-dark">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 col-lg-4 hr-right">
+                    <h5 class="f-header">Campus Gouda</h5>
+                    <hr class="hr-line">
+                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
+                        Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus
+                        mus.</p>
+                </div>
+                <div class="col-sm-12 col-lg-4 pl-4 hr-right">
+                    <h6 class="f-header2">Navigation</h6>
+                    <hr class="hr-line">
+                    <ul>
+                        <li><a href="">Home</a></li>
+                        <li><a href="">Blog</a></li>
+                        <li><a href="">Media</a></li>
+                        <li><a href="">Over Gouda</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-12 col-lg-4 pl-4">
+                    <h6 class="f-header2">Media</h6>
+                    <hr class="hr-line">
+                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
+                        Aenean massa.</p>
+                    <ul class="d-flex">
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
                 </div>
             </div>
         </div>
-    </footer>
+    </div>
+</footer>
 
-    {{ encore_entry_script_tags('app') }}
+{{ encore_entry_script_tags('app') }}
 
-    {% block javascripts %}
-        <script src="js/jquery.easing.min.js"></script>
-        <script src="js/jquery.easing.compatibility.js"></script>
-    {% endblock %}
+{% block javascripts %}
+    <script src="js/jquery.easing.min.js"></script>
+    <script src="js/jquery.easing.compatibility.js"></script>
+{% endblock %}
 </body>
 </html>

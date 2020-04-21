@@ -1,5 +1,5 @@
 section#contact {
-  height: 100%;
+  background-color: rgba($color:$text-color, $alpha:0.8);
 
   .section-heading {
     color: $white;
@@ -7,20 +7,24 @@ section#contact {
   .form-group {
     margin-bottom: 25px;
 
-    input, textarea {
-      padding: 20px;
+    label {
+      font-weight: 600;
     }
 
     input.form-control {
       height: auto;
+      border-radius: 0;
+      border: none;
     }
     textarea.form-control {
       height: 248px;
+      border-radius: 0;
+      border: none;
     }
   }
 
   .form-control:focus {
-    border-color: $primary;
+    border-color: $secondary;
     box-shadow: none;
   }
 
