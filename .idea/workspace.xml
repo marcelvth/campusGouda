@@ -2,12 +2,36 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e66536b3-0420-422e-bb44-7550516d9eb6" name="Default Changelist" comment="minor update">
+      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Controller/BlogController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Entity/Blog.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Form/BlogType.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Mapping/EntityBase.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Mapping/EntityBaseInterface.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Migrations/Version20200415123356.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Migrations/Version20200415130321.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Migrations/Version20200415130703.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Migrations/Version20200415130902.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Migrations/Version20200415132006.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Migrations/Version20200415132113.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Repository/BlogRepository.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/blog/_delete_form.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/blog/_form.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/blog/edit.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/blog/new.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/blog/show.html.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/scss/layout/_banner.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/scss/layout/_banner.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entity/Author.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entity/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/User.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Form/RegistrationFormType.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Form/RegistrationFormType.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Repository/AuthorRepository.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Repository/CgUserRepository.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Security/LoginAuthenticator.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Security/LoginAuthenticator.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webpack.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/webpack.config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/blog/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/blog/index.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/registration/register.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/registration/register.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/security/login.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/security/login.html.twig" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,7 +55,23 @@
     <option name="HIDDEN_KINDS">
       <set />
     </option>
-    <expand />
+    <expand>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="@localhost" type="feb32156:DbDataSourceImpl" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="campusgouda: schema" type="ebfa3cd1:MariaImplModel$Schema" />
+      </path>
+    </expand>
     <select />
   </component>
   <component name="FileTemplateManagerImpl">
@@ -62,6 +102,13 @@
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IgnoredFileRootStore">
+    <option name="generatedRoots">
+      <set>
+        <option value="C:\xampp\htdocs\campusGouda\.idea" />
+      </set>
+    </option>
   </component>
   <component name="PackageJsonUpdateNotifier">
     <dismissed value="$PROJECT_DIR$/package.json" />
@@ -192,11 +239,12 @@
   </component>
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="DatabaseDriversLRU" value="mysql" />
     <property name="NewWatcherDialog.advanced.open" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/Mapping" />
     <property name="list.type.of.created.stylesheet" value="SCSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -205,22 +253,22 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
+    <property name="settings.editor.selected.configurable" value="web-ide.project.structure" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\xampp\htdocs\campusGouda\public\img" />
-      <recent name="C:\xampp\htdocs\campusGouda\public\img\svg" />
-      <recent name="C:\xampp\htdocs\campusGouda\public\lib" />
-      <recent name="C:\xampp\htdocs\campusGouda\public\Fonts" />
-      <recent name="C:\xampp\htdocs\campusGouda\assets\css" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\xampp\htdocs\campusGouda\public" />
       <recent name="C:\xampp\htdocs\campusGouda\assets" />
       <recent name="C:\xampp\htdocs\campusGouda\public\js" />
       <recent name="C:\xampp\htdocs\campusGouda\assets\css" />
       <recent name="C:\xampp\htdocs\campusGouda\assets\js" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\campusGouda\src\Mapping" />
+      <recent name="C:\xampp\htdocs\campusGouda\public\img" />
+      <recent name="C:\xampp\htdocs\campusGouda\public\img\svg" />
+      <recent name="C:\xampp\htdocs\campusGouda\public\lib" />
+      <recent name="C:\xampp\htdocs\campusGouda\public\Fonts" />
     </key>
   </component>
   <component name="RunManager" selected="npm.dev">
@@ -284,6 +332,8 @@
       <workItem from="1586938500523" duration="855000" />
       <workItem from="1586949405662" duration="1046000" />
       <workItem from="1586951947034" duration="1031000" />
+      <workItem from="1587127512078" duration="309000" />
+      <workItem from="1587450288989" duration="7719000" />
     </task>
     <servers />
   </component>
@@ -305,6 +355,10 @@
     </state>
     <state x="374" y="7" key="#Plugins/-302.1440.1280.700/0.0.2048.1112/2560.178.1920.1040/-1920.116.1920.1040@0.0.2048.1112" timestamp="1582097100294" />
     <state x="234" y="4" key="#Plugins/0.0.1280.680@0.0.1280.680" timestamp="1581513993974" />
+    <state x="616" y="214" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1586953900535">
+      <screen x="0" y="0" width="2048" height="1112" />
+    </state>
+    <state x="616" y="214" key="#com.intellij.execution.impl.EditConfigurationsDialog/-550.1152.1280.704/-2048.0.2048.1112/0.0.2048.1112/2048.0.2048.1112@0.0.2048.1112" timestamp="1586953900535" />
     <state x="774" y="359" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1586944529103">
       <screen x="0" y="0" width="2048" height="1112" />
     </state>
@@ -350,21 +404,34 @@
     </state>
     <state width="2005" height="308" key="GridCell.Tab.0.right/-302.1440.1280.700/0.0.2048.1112/2560.178.1920.1040/-1920.116.1920.1040@0.0.2048.1112" timestamp="1582099069829" />
     <state width="1002" height="306" key="GridCell.Tab.0.right/-550.1152.1280.704/-2048.0.2048.1112/0.0.2048.1112/2048.0.2048.1112@0.0.2048.1112" timestamp="1586951888422" />
+    <state width="210" height="457" key="HiddenNamespacesPopup" timestamp="1586953913949">
+      <screen x="0" y="0" width="2048" height="1112" />
+    </state>
+    <state width="210" height="457" key="HiddenNamespacesPopup/-550.1152.1280.704/-2048.0.2048.1112/0.0.2048.1112/2048.0.2048.1112@0.0.2048.1112" timestamp="1586953913949" />
+    <state x="827" y="370" key="NewPhpClassDialog" timestamp="1587457276488">
+      <screen x="0" y="0" width="2048" height="1112" />
+    </state>
+    <state x="827" y="370" key="NewPhpClassDialog/-550.1152.1280.704/-2048.0.2048.1112/0.0.2048.1112/2048.0.2048.1112@0.0.2048.1112" timestamp="1587457276488" />
     <state x="791" y="179" key="RollbackChangesDialog" timestamp="1586942898214">
       <screen x="0" y="0" width="2048" height="1112" />
     </state>
     <state x="791" y="179" key="RollbackChangesDialog/-550.1152.1280.704/-2048.0.2048.1112/0.0.2048.1112/2048.0.2048.1112@0.0.2048.1112" timestamp="1586942898214" />
     <state x="593" y="133" key="RollbackChangesDialog/0.0.1536.824/-373.-1440.2560.1400@0.0.1536.824" timestamp="1586011235051" />
-    <state x="184" y="0" key="SettingsEditor" timestamp="1586011209039">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state x="245" y="0" key="SettingsEditor" timestamp="1587451414312">
+      <screen x="0" y="0" width="2048" height="1112" />
     </state>
     <state x="245" y="0" key="SettingsEditor/-302.1440.1280.700/0.0.2048.1112/2560.178.1920.1040/-1920.116.1920.1040@0.0.2048.1112" timestamp="1582096512016" />
+    <state x="245" y="0" key="SettingsEditor/-550.1152.1280.704/-2048.0.2048.1112/0.0.2048.1112/2048.0.2048.1112@0.0.2048.1112" timestamp="1587451414312" />
     <state x="153" y="0" key="SettingsEditor/0.0.1280.680@0.0.1280.680" timestamp="1582188532775" />
     <state x="184" y="0" key="SettingsEditor/0.0.1536.824/-373.-1440.2560.1400@0.0.1536.824" timestamp="1586011209039" />
     <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1585997877941">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824/-373.-1440.2560.1400@0.0.1536.824" timestamp="1585997877941" />
+    <state x="733" y="197" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog" timestamp="1586955739592">
+      <screen x="0" y="0" width="2048" height="1112" />
+    </state>
+    <state x="733" y="197" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog/-550.1152.1280.704/-2048.0.2048.1112/0.0.2048.1112/2048.0.2048.1112@0.0.2048.1112" timestamp="1586955739592" />
     <state x="425" y="187" key="run.anything.popup" timestamp="1586015481933">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -392,6 +459,16 @@
           <url>file://$PROJECT_DIR$/templates/home/blog.html.twig</url>
           <line>18</line>
           <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/src/Controller/SecurityController.php</url>
+          <line>4</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/src/Repository/UserRepository.php</url>
+          <line>4</line>
+          <option name="timeStamp" value="3" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
