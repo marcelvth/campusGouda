@@ -1,16 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e66536b3-0420-422e-bb44-7550516d9eb6" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Controller/RegistrationController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Entity/User.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Form/RegistrationFormType.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/registration/register.html.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/packages/security.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/security.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/BlogController.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/CgUserController.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Entity/CgUser.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Form/CgUserType.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/scss/base/_vars.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/scss/base/_vars.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/scss/components/_buttons.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/scss/components/_buttons.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/scss/components/_footer.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/scss/components/_footer.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/scss/components/_navbar.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/scss/components/_navbar.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/scss/layout/_banner.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/scss/layout/_banner.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/scss/layout/_contact.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/scss/layout/_contact.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/scss/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/scss/main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/scss/main.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/assets/scss/main.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/scss/main.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/scss/main.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/HomeController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html.twig" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,9 +22,7 @@
   </component>
   <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
     <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
-    <execution>
-      <executable />
-    </execution>
+    <execution />
   </component>
   <component name="DatabaseView">
     <option name="SHOW_INTERMEDIATE" value="true" />
@@ -180,6 +181,7 @@
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="NewWatcherDialog.advanced.open" value="true" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
@@ -192,7 +194,7 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -241,11 +243,20 @@
       <workItem from="1586851614377" duration="4242000" />
       <workItem from="1586937583386" duration="13000" />
       <workItem from="1586938500523" duration="855000" />
+      <workItem from="1586949345968" duration="56000" />
+      <workItem from="1586949419911" duration="162000" />
+      <workItem from="1586949708993" duration="47000" />
+      <workItem from="1586949769137" duration="25000" />
+      <workItem from="1586949806594" duration="127000" />
+      <workItem from="1586949952938" duration="33000" />
+      <workItem from="1586950000397" duration="3525000" />
+      <workItem from="1587458307998" duration="41000" />
+      <workItem from="1587458375179" duration="619000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="1" />
+    <option name="version" value="2" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
@@ -304,31 +315,31 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="593" y="133" key="RollbackChangesDialog/0.0.1536.824/-373.-1440.2560.1400@0.0.1536.824" timestamp="1586011235051" />
-    <state x="184" y="0" key="SettingsEditor" timestamp="1586011209039">
+    <state x="277" y="57" key="SettingsEditor" timestamp="1586950017513">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="245" y="0" key="SettingsEditor/-302.1440.1280.700/0.0.2048.1112/2560.178.1920.1040/-1920.116.1920.1040@0.0.2048.1112" timestamp="1582096512016" />
     <state x="153" y="0" key="SettingsEditor/0.0.1280.680@0.0.1280.680" timestamp="1582188532775" />
-    <state x="184" y="0" key="SettingsEditor/0.0.1536.824/-373.-1440.2560.1400@0.0.1536.824" timestamp="1586011209039" />
+    <state x="277" y="57" key="SettingsEditor/0.0.1536.824/-373.-1440.2560.1400@0.0.1536.824" timestamp="1586950017513" />
     <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1585997877941">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824/-373.-1440.2560.1400@0.0.1536.824" timestamp="1585997877941" />
-    <state x="425" y="187" key="run.anything.popup" timestamp="1586015481933">
+    <state x="425" y="187" key="run.anything.popup" timestamp="1586952963655">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="425" y="187" key="run.anything.popup/0.0.1536.824/-373.-1440.2560.1400@0.0.1536.824" timestamp="1586015481933" />
+    <state x="425" y="187" key="run.anything.popup/0.0.1536.824/-373.-1440.2560.1400@0.0.1536.824" timestamp="1586952963655" />
     <state x="244" y="7" key="scopes" timestamp="1582016416554">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="244" y="7" key="scopes/0.0.1280.680@0.0.1280.680" timestamp="1582016416554" />
-    <state x="162" y="22" width="807" height="822" key="search.everywhere.popup" timestamp="1586085668922">
+    <state x="162" y="22" width="807" height="822" key="search.everywhere.popup" timestamp="1586950719189">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="485" y="2" width="1076" height="1109" key="search.everywhere.popup/-302.1440.1280.700/0.0.2048.1112/2560.178.1920.1040/-1920.116.1920.1040@0.0.2048.1112" timestamp="1582098421606" />
     <state x="303" y="1" width="672" height="678" key="search.everywhere.popup/0.0.1280.680@0.0.1280.680" timestamp="1582028938226" />
-    <state x="162" y="22" width="807" height="822" key="search.everywhere.popup/0.0.1536.824/-373.-1440.2560.1400@0.0.1536.824" timestamp="1586012107535" />
-    <state x="162" y="22" width="807" height="822" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1586085668922" />
+    <state x="162" y="22" width="807" height="822" key="search.everywhere.popup/0.0.1536.824/-373.-1440.2560.1400@0.0.1536.824" timestamp="1586950719189" />
+    <state x="162" y="22" width="807" height="822" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1586944864531" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
