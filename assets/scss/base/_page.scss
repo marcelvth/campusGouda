@@ -9,10 +9,15 @@ body {
   height: 100%;
   background-color: $white;
   font-family: din2014;
+  display: flex;
+  flex-direction: column;
 }
 html {
   scroll-behavior: smooth;
   height: 100%;
+}
+.content {
+  flex: 1 0 auto;
 }
 .logo {
   height: 70px;

@@ -15,8 +15,6 @@ class BlogType extends AbstractType
             ->add('title')
             ->add('body')
             ->add('img_path')
-            ->add('createdAt')
-            ->add('updatedAt')
             ->add('author')
         ;
     }
