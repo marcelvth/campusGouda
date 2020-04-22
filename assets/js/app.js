@@ -21,7 +21,7 @@ import './tiny-slider.js';
             if (target.length) {
                 $('html, body').animate({
                     scrollTop: (target.offset().top - 54)
-                }, 500, "easeInOutExpo");
+                }, 1000, "easeInOutExpo");
                 return false;
             }
         }
@@ -35,7 +35,7 @@ import './tiny-slider.js';
     // Activate scrollspy to add active class to navbar items on scroll
     $('body').scrollspy({
         target: '#mainNav',
-        offset: 94
+        offset: 60
     });
 
     // Collapse Navbar
@@ -46,22 +46,11 @@ import './tiny-slider.js';
             $("#mainNav").removeClass("navbar-shrink");
         }
     };
-
     // Collapse now if page is not at top
     navbarCollapse();
     // Collapse the navbar when page is scrolled
     $(window).scroll(navbarCollapse);
 
-    // init tiny slider
-    slider = tns({
-        container: '.slider',
-        items: 1,
-        loop: false,
-        axis: 'vertical',
-        gutter: 50
-    });
-
-    // init animations
     AOS.init();
     AOS.refreshHard();  //optional
 
