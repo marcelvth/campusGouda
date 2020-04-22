@@ -1,14 +1,16 @@
 // create global $ and jQuery variables
 const $ = require('jquery');
+//import tiny-slider from node modules
+
+import {tns} from "tiny-slider/src/tiny-slider";
 
 require('bootstrap');
+
 
 import '../scss/main.scss';
 import '../css/app.css';
 
 import './aos.js';
-import './tiny-slider.js';
-
 
 (function ($) {
     "use strict"; // Start of use strict
@@ -54,4 +56,31 @@ import './tiny-slider.js';
     AOS.init();
     AOS.refreshHard();  //optional
 
+    const slider = tns({
+        container: 'ul.slider',
+        items: 3,
+        slideBy: 'page',
+        autoplay: true,
+        responsive: {
+            640: {
+                edgePadding: 20,
+                gutter: 20,
+                items: 2
+            },
+            700: {
+                gutter: 30
+            },
+            900: {
+                items: 3
+            }
+        }
+    });
 })(jQuery); // End of use strict
+
+
+
+
+
+
+
+

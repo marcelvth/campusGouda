@@ -12,6 +12,8 @@
   .navbar-brand {
     color: $white;
     font-weight: 600;
+    padding-top: unset;
+    padding-bottom: unset;
 
     &.active,
     &:active,
@@ -88,6 +90,7 @@
         .nav-link {
           padding: 1.1em 1em !important;
           color: $text-color;
+          font-size: 100%;
         }
       }
     }
@@ -108,6 +111,7 @@
       .nav-item {
         .nav-link {
           color: $white;
+          font-size: 100%;
         }
 
         &.active,
