@@ -25,6 +25,41 @@ class BlogController extends AbstractController
         ]);
     }
 
+    public function post(Request $request)
+    {
+        $blog = new Post();
+
+        $form = $this->createForm(BlogType::class, $blog);
+        $form->handleRequest($request);
+
+        if($form->isSubmitted() && $form->isValid()){
+
+            $data = $form->getData();
+            /** @var Symfony\Component\HttpFoundation\File\UploadedFile $file */
+
+            $img = $form->get('image')->getData();
+
+            $fileName = md5(uniqid()).'.'.$img->guessExtension();
+
+            $img->move($this->getParameter('image_directory'), $fileName);
+
+            $data->setImage($fileName);
+
+            $em = $this->getDoctrine()->getManager();
+            $em->persist($data);
+
+            $em->flush();
+
+            return $this->redirectToRoute("blog_index");
+
+        }
+
+        return $this->render('blog/index.html.twig',[
+
+            'form' => $form->createView()
+        ]);
+    }
+
     /**
      * @Route("/new", name="blog_new", methods={"GET","POST"})
      */

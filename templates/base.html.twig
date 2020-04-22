@@ -6,14 +6,14 @@
     <title>{% block title %}{% endblock %} - Campus Gouda</title>
     <link rel="stylesheet" href="/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/tiny-slider.css">
-    <script src="/js/aos.js"></script>
+
     {% block stylesheets %}
         {{ encore_entry_link_tags('app') }}
 
     {% endblock %}
 
 </head>
-<body>
+<body data-spy="scroll" data-offset="99">
 
 <!-- Navigation -->
 <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
