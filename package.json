@@ -20,7 +20,7 @@
     "dependencies": {
         "aos": "^2.3.4",
         "bootstrap": "^4.4.1",
-        "jquery": "^3.4.1",
+        "jquery": "^3.5.0",
         "popper.js": "^1.16.1",
         "tiny-slider": "^2.9.2"
     }
