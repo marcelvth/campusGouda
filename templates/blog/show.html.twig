@@ -3,10 +3,11 @@
 {% block title %}Blog{% endblock %}
 
 {% block body %}
-    <h1>Blog</h1>
+    <div class="container">
+        <h1>Blog</h1>
 
-    <table class="table">
-        <tbody>
+        <table class="table">
+            <tbody>
             <tr>
                 <th>Id</th>
                 <td>{{ blog.id }}</td>
@@ -31,12 +32,14 @@
                 <th>UpdatedAt</th>
                 <td>{{ blog.updatedAt ? blog.updatedAt|date('Y-m-d H:i:s') : '' }}</td>
             </tr>
-        </tbody>
-    </table>
+            </tbody>
+        </table>
 
-    <a href="{{ path('blog_index') }}">back to list</a>
+        <a href="{{ path('blog_index') }}">back to list</a>
 
-    <a href="{{ path('blog_edit', {'id': blog.id}) }}">edit</a>
+        <a href="{{ path('blog_edit', {'id': blog.id}) }}">edit</a>
 
-    {{ include('blog/_delete_form.html.twig') }}
+        {{ include('blog/_delete_form.html.twig') }}
+    </div>
+
 {% endblock %}
