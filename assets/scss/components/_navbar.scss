@@ -1,12 +1,12 @@
 // Styling for the navbar
 #mainNav {
-  background-color: $text-color;
+  background-color: $blue-light;
 
   .navbar-toggler {
     font-size: 12px;
     right: 0;
     border: 0;
-    background-color: $text-color;
+    background-color: $blue-light;
   }
 
   .navbar-brand {
@@ -71,7 +71,7 @@
     background-color: $white;
 
     .navbar-brand {
-      color: $text-color;
+      color: $blue-light;
       font-size: 1.75em;
       -webkit-transition: all 0.3s;
       -moz-transition: all 0.3s;
@@ -98,7 +98,7 @@
     &.navbar-shrink {
       padding-top: 0;
       padding-bottom: 0;
-      background-color: $text-color;
+      background-color: $blue-light;
       color: black;
 
       .navbar-brand {
