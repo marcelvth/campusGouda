@@ -1,6 +1,17 @@
 .btn {
   font-weight: 700;
   border-radius: 0;
+
+  &.btn-primary {
+    background-color: $secondary;
+    border: none;
+
+    &:hover {
+      background-color: darken($secondary, 7%);
+    }
+
+  }
+
 }
 //a.btn {
 //  color: $white !important;
