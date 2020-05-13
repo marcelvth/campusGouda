@@ -4,16 +4,12 @@
 
 {% block body %}
 
-    <div class="banner">
-        <section class="container d-flex flex-column header text-center">
-            <div class="mt-5">
-                <img src="{{ asset('img/CG_Logo.png') }}">
-            </div>
-            <div>
-                <a href="#overgouda" class="btn btn-outline-green mt-5">Lees meer &darr;</a>
-            </div>
-        </section>
-    </div>
+    <section class="banner">
+        <div class="header">
+            <div id="logo"></div>
+            <a href="#overgouda" class="btn btn-outline-green mt-3">Lees meer &darr;</a>
+        </div>
+    </section>
 
     <section id="meer">
         <div class="jumbotron jumbotron-fluid overgouda-jumbo">
@@ -35,7 +31,7 @@
         <div class="container-fluid">
             <div class="row">
                 <div class="col-10 mx-auto">
-                    <div class="blog-slider">
+                    <div class="blog">
                         {% for content in post %}
                             <div class="post">
                                 <div class="post-outer">
@@ -45,7 +41,7 @@
                                         </div>
                                         <div class="post-body">
                                             <img src="/img/{{ content.ImgPath }}" class="card-img-top img-responsive img-thumbnail" >
-                                            {{ content.t }}
+{#                                            {{ content.t }}#}
                                         </div>
                                         <div class="post-footer">
                                             <a href="/viewpost/{{ content.id }}" class="btn btn-primary">Meer lezen</a>

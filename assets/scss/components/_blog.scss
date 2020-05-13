@@ -1,6 +1,10 @@
 #blog {
   padding: 120px 0;
-  .blog-slider{
+  .blog {
+    display: flex;
+    flex-direction: column;
+    column-count: 1;
+    
     .post {
       max-width: 30%;
       .post-outer {
@@ -11,7 +15,6 @@
           .post-head {
             padding: 10px;
             background-color: $secBg;
-
           }
 
           .post-body {
