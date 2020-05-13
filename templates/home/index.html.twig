@@ -5,11 +5,12 @@
 {% block body %}
 
     <div class="banner">
-        <section class="container">
-            <div class="header text-center">
-                <h1>Campus Gouda</h1>
-                <p>"Samen voor innovatie en groei in midden Holland"</p>
-                <button class="btn btn-outline-danger readMore">Lees meer &darr;</button>
+        <section class="container d-flex flex-column header text-center">
+            <div class="mt-5">
+                <img src="{{ asset('img/CG_Logo.png') }}">
+            </div>
+            <div>
+                <a href="#overgouda" class="btn btn-outline-green mt-5">Lees meer &darr;</a>
             </div>
         </section>
     </div>
@@ -203,7 +204,7 @@
                     {{ form_start(form) }}
                     {{ form_widget(form) }}
                     {{ form_end(form) }}
-                    <input type="submit" value="Verstuur" class="btn btn-lg btn-outline-danger mb-4">
+                    <input type="submit" value="Verstuur" class="btn btn-lg btn-outline-green mb-4">
                 </div>
             </div>
         </div>
