@@ -61,6 +61,10 @@ import '../css/app.css';
         gutter: 20,
         autoWidth: true,
         autoplay: true,
+        controlsPosition: 'bottom',
+        arrowKeys: true,
+        autoplayButtonOutput: false,
+
         responsive: {
             640: {
                 edgePadding: 20,

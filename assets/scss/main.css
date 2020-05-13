@@ -77,32 +77,32 @@ html {
   border: #80BA27;
 }
 
-.btn-outline-danger {
+.btn-outline-green {
   background-color: #ffffff;
   border: 2px solid #306196;
 }
-.btn-outline-danger:active, .btn-outline-danger:focus {
+.btn-outline-green:active, .btn-outline-green:focus {
   box-shadow: none !important;
 }
-.btn-outline-danger:hover {
+.btn-outline-green:hover {
   background-color: #80BA27;
   border-color: #ececec !important;
   color: #ffffff;
 }
 
-.btn-danger {
+.btn-green {
   background-color: #80BA27;
   border-color: #80BA27;
 }
-.btn-danger:active, .btn-danger:focus, .btn-danger:hover {
+.btn-green:active, .btn-green:focus, .btn-green:hover {
   background-color: #6a9a20 !important;
   border-color: #6a9a20 !important;
   color: #ffffff;
 }
-.btn-danger:active, .btn-danger:focus {
+.btn-green:active, .btn-green:focus {
   box-shadow: 0 0 0 0.2rem rgba(254, 209, 55, 0.5) !important;
 }
-.btn-danger:disabled {
+.btn-green:disabled {
   background-color: #d8cdb8;
   border-color: #375111;
 }

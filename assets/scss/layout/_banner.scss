@@ -1,9 +1,9 @@
 .banner {
-  position: relative;
   height: 50vh;
   background-image: url("/img/banner.jpg");
   background-size: cover;
   background-position: center;
+}
 
   .header {
     background-color: rgba(225,225,225, 0.5);
@@ -24,19 +24,24 @@
     .container {
       background-color: transparent;
     }
+.header {
+  img {
+    width: 400px;
+    height: 400px;
   }
+}
 
-  .overgouda-jumbo {
-    background-color: $primary;
-    h2 {
+.overgouda-jumbo {
+  background-color: $primary;
+  h2 {
+    color: $white;
+    font-weight: 500;
+    &p {
       color: $white;
-      font-weight: 500;
-      &p {
-        color: $white;
-      }
     }
   }
 }
+
 @media only screen and (min-width: 768px) {
   .banner {
     height: calc(100vh - 125px);
