@@ -42,7 +42,7 @@ class HomeController extends AbstractController
             $form = $this->createForm(new ContactType(), $form);
         }
 
-        $post = $this->getDoctrine()->getRepository(Blog::class)->findAll();
+        $post = $this->getDoctrine()->getRepository(Blog::class)->findBy([],['id'=>'DESC'],4,0);
 
         return $this->render('home/index.html.twig', [
 
