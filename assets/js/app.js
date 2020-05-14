@@ -79,24 +79,7 @@ import '../css/app.css';
             }
         }
     });
-    const blogslider = tns({
-        container: '.blog-slider',
-        items: 3,
-        gutter: 20,
-        responsive: {
-            640: {
-                edgePadding: 20,
-                gutter: 20,
-                items: 2
-            },
-            700: {
-                gutter: 30
-            },
-            900: {
-                items: 4
-            }
-        }
-    });
+
 
 })(jQuery); // End of use strict
 
