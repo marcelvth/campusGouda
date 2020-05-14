@@ -27,7 +27,7 @@ class BlogController extends AbstractController
 
     public function post(Request $request)
     {
-        $blog = new Post();
+        $blog = new Blog();
 
         $form = $this->createForm(BlogType::class, $blog);
         $form->handleRequest($request);
@@ -104,7 +104,7 @@ class BlogController extends AbstractController
         if ($form->isSubmitted() && $form->isValid()) {
             $this->getDoctrine()->getManager()->flush();
 
-            return $this->redirectToRoute('blog_index');
+            return $this->redirectToRoute('home');
         }
 
         return $this->render('blog/edit.html.twig', [

@@ -1,0 +1,30 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Read{% endblock %}
+
+{% block body %}
+    <h1>Read</h1>
+
+    <table class="table">
+        <tbody>
+            <tr>
+                <th>Id</th>
+                <td>{{ read.id }}</td>
+            </tr>
+            <tr>
+                <th>Body</th>
+                <td>{{ read.body }}</td>
+            </tr>
+            <tr>
+                <th>Title</th>
+                <td>{{ read.title }}</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <a href="{{ path('read_index') }}">back to list</a>
+
+    <a href="{{ path('read_edit', {'id': read.id}) }}">edit</a>
+
+    {{ include('read/_delete_form.html.twig') }}
+{% endblock %}

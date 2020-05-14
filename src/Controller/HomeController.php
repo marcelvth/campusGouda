@@ -2,6 +2,7 @@
 
 namespace App\Controller;
 
+use App\Entity\Read;
 use App\Form\ContactType;
 use App\Entity\Blog;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
@@ -42,13 +43,15 @@ class HomeController extends AbstractController
             $form = $this->createForm(new ContactType(), $form);
         }
 
-        $post = $this->getDoctrine()->getRepository(Blog::class)->findBy([],['id'=>'DESC'],4,0);
+        $posts = $this->getDoctrine()->getRepository(Blog::class)->findAll();
+        $reads = $this->getDoctrine()->getRepository(Read::class)->findAll();
 
         return $this->render('home/index.html.twig', [
 
                 'controller_name' => 'HomeController',
                 'form' => $form->createView(),
-                'post' => $post
+                'posts' => $posts,
+                'reads' => $reads,
 
             ]
         );

@@ -1,0 +1,11 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}New Read{% endblock %}
+
+{% block body %}
+    <h1>Create new Read</h1>
+
+    {{ include('read/_form.html.twig') }}
+
+    <a href="{{ path('read_index') }}">back to list</a>
+{% endblock %}

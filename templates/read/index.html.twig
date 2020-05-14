@@ -1,0 +1,37 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Read index{% endblock %}
+
+{% block body %}
+    <h1>Read index</h1>
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Body</th>
+                <th>Title</th>
+                <th>actions</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for read in reads %}
+            <tr>
+                <td>{{ read.id }}</td>
+                <td>{{ read.body }}</td>
+                <td>{{ read.title }}</td>
+                <td>
+                    <a href="{{ path('read_show', {'id': read.id}) }}">show</a>
+                    <a href="{{ path('read_edit', {'id': read.id}) }}">edit</a>
+                </td>
+            </tr>
+        {% else %}
+            <tr>
+                <td colspan="4">no records found</td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+    <a href="{{ path('read_new') }}">Create new</a>
+{% endblock %}
