@@ -18,6 +18,16 @@
   }
 }
 
+@media(max-width:992px) {
+  .info-margin {
+    padding-right: 1em !important;
+    width: 100% !important;
+  }
+  .overGouda-cols {
+    padding: 0;
+  }
+}
+
 .banner_box2 {
   height: 50px;
   width: 170px;
@@ -91,31 +101,3 @@ width: 100%;
   color: #fff;
 
 }
-
-//@media screen and (max-width: 1115px) {
-//  .banner_boxes {
-//    margin-left: -50vh;
-//  }
-//
-//  .container {
-//    height: 90vh;
-//  }
-//
-//  .text_title {
-//    font-size: 40px;
-//  }
-//}
-
-//@media screen and (max-width: 800px) {
-//.banner_boxes {
-//  margin-left: 0;
-//}
-//}
-
-//.banner {
-//  height: 93vh;
-//  width: 100%;
-//  background-image: url("/img/gouda_kaasmarkt.jfif");
-//  background-size: cover;
-//  background-position: center;
-//}
