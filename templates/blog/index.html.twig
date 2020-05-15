@@ -13,8 +13,10 @@
                 <th>Title</th>
                 <th>Body</th>
                 <th>Img_path</th>
+{#
                 <th>CreatedAt</th>
                 <th>UpdatedAt</th>
+#}
                 <th>actions</th>
             </tr>
             </thead>
@@ -24,9 +26,12 @@
                     <td>{{ blog.id }}</td>
                     <td>{{ blog.title }}</td>
                     <td>{{ blog.body }}</td>
-                    <td>{{ blog.imgPath }}</td>
+                    <td class="d-none d-md-block"><img src="{{ vich_uploader_asset(blog, 'imageFile') }}" alt="{{ blog.imageName }}"
+                                                       style="height:50px;"/></td>
+{#
                     <td>{{ blog.createdAt ? blog.createdAt|date('Y-m-d H:i:s') : '' }}</td>
                     <td>{{ blog.updatedAt ? blog.updatedAt|date('Y-m-d H:i:s') : '' }}</td>
+#}
                     <td>
                         <a href="{{ path('blog_show', {'id': blog.id}) }}">show</a>
                         <a href="{{ path('blog_edit', {'id': blog.id}) }}">edit</a>
