@@ -47,7 +47,7 @@
                                             <h3>{{ post.title }}</h3>
                                         </div>
                                         <div class="post-body">
-                                            <img src="/img/{{ post.ImgPath }}"
+                                            <img src="{{ vich_uploader_asset(post, 'imageFile') }}"
                                                  class="card-img-top img-responsive img-thumbnail">
                                             {{ post.body | raw }}
                                         </div>

@@ -3,13 +3,14 @@
 namespace App\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
-use App\Mapping\EntityBase;
+use Symfony\Component\HttpFoundation\File\File;
+use Vich\UploaderBundle\Mapping\Annotation as Vich;
 
 /**
  * @ORM\Entity(repositoryClass="App\Repository\BlogRepository")
- * @ORM\HasLifecycleCallbacks
+ * @Vich\Uploadable
  */
-class Blog extends EntityBase
+class Blog
 {
     /**
      * @ORM\Id()
@@ -34,10 +35,79 @@ class Blog extends EntityBase
     private $body;
 
     /**
-     * @ORM\Column(type="text")
+     * NOTE: This is not a mapped field of entity metadata, just a simple property.
+     *
+     * @Vich\UploadableField(mapping="blogs", fileNameProperty="imageName", size="imageSize")
+     *
+     * @var File|null
      */
-    private $img_path;
+    private $imageFile;
 
+    /**
+     * @ORM\Column(type="string")
+     *
+     * @var string|null
+     */
+    private $imageName;
+
+    /**
+     * @ORM\Column(type="integer")
+     *
+     * @var int|null
+     */
+    private $imageSize;
+
+    /**
+     * @ORM\Column(type="datetime")
+     *
+     * @var \DateTimeInterface|null
+     */
+    protected $updatedAt;
+
+    /**
+     * If manually uploading a file (i.e. not using Symfony Form) ensure an instance
+     * of 'UploadedFile' is injected into this setter to trigger the update. If this
+     * bundle's configuration parameter 'inject_on_load' is set to 'true' this setter
+     * must be able to accept an instance of 'File' as the bundle will inject one here
+     * during Doctrine hydration.
+     *
+     * @param File|\Symfony\Component\HttpFoundation\File\UploadedFile|null $imageFile
+     */
+    public function setImageFile(?File $imageFile = null): void
+    {
+        $this->imageFile = $imageFile;
+
+        if (null !== $imageFile) {
+            // It is required that at least one field changes if you are using doctrine
+            // otherwise the event listeners won't be called and the file is lost
+            $this->updatedAt = new \DateTimeImmutable();
+        }
+    }
+
+    public function getImageFile(): ?File
+    {
+        return $this->imageFile;
+    }
+
+    public function setImageName(?string $imageName): void
+    {
+        $this->imageName = $imageName;
+    }
+
+    public function getImageName(): ?string
+    {
+        return $this->imageName;
+    }
+
+    public function setImageSize(?int $imageSize): void
+    {
+        $this->imageSize = $imageSize;
+    }
+
+    public function getImageSize(): ?int
+    {
+        return $this->imageSize;
+    }
 
     public function getId(): ?int
     {
@@ -76,18 +146,6 @@ class Blog extends EntityBase
     public function setBody(string $body): self
     {
         $this->body = $body;
-
-        return $this;
-    }
-
-    public function getImgPath(): ?string
-    {
-        return $this->img_path;
-    }
-
-    public function setImgPath(string $img_path): self
-    {
-        $this->img_path = $img_path;
 
         return $this;
     }
