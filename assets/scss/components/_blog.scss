@@ -2,8 +2,8 @@
   padding: 120px 0;
   .blog {
     display: flex;
-    flex-direction: column;
-    column-count: 1;
+    flex-direction: row;
+    column-count: 4;
     
     .post {
       max-width: 30%;
@@ -11,7 +11,7 @@
         border: 1px solid $primary;
         .post-inner {
           display: flex;
-          flex-direction: column;
+          flex-direction: row;
           .post-head {
             padding: 10px;
             background-color: $secBg;
