@@ -15,7 +15,7 @@
             <div class="container">
                 {% if reads[0] is defined %}
                     <h2 class="display-4 pb-4">{{ reads[0].title }} {% if app.user %}<a
-                            href="{{ path('read_edit', {'id': reads[0].id}) }}"><i class="fas fa-pen"></i>
+                            href="{{ path('read_edit', {'id': reads[0].id}) }}"><i class="fas fa-pen text-black-50"></i>
                             </a>{% endif %}</h2>
                     <p class="lead">{{ reads[0].body | raw }}</p>
                 {% else %}
@@ -73,7 +73,7 @@
                 {% for post in posts %}
                     <div class="col-sm-12 col-lg-6 overGouda-cols">
                         <h3 class="text_title">{{ post.title }} {% if app.user %}<a
-                                href="{{ path('blog_edit', {'id': post.id}) }}"><i class="fas fa-pen"></i>
+                                href="{{ path('blog_edit', {'id': post.id}) }}"><i class="fas fa-pen text-black-50"></i>
                                 </a>{% endif %}</h3>
                         <p class=" text-wrap">{{ post.body | raw }}</p>
                     </div>
@@ -90,7 +90,7 @@
                         <div class="col-sm-12 col-lg-6">
                             {% if reads[1] is defined %}
                                 <h4 class="text_title">{{ reads[1].title }} {% if app.user %}<a
-                                        href="{{ path('read_edit', {'id': reads[1].id}) }}"><i class="fas fa-pen"></i>
+                                        href="{{ path('read_edit', {'id': reads[1].id}) }}"><i class="fas fa-pen text-black-50"></i>
                                         </a>{% endif %}</h4>
                                 <p>{{ reads[1].body | raw }}</p>
                             {% else %}
