@@ -2,6 +2,7 @@
 
 namespace App\Controller;
 
+use App\Entity\Item;
 use App\Entity\Read;
 use App\Form\ContactType;
 use App\Entity\Blog;
@@ -45,6 +46,7 @@ class HomeController extends AbstractController
 
         $posts = $this->getDoctrine()->getRepository(Blog::class)->findAll();
         $reads = $this->getDoctrine()->getRepository(Read::class)->findAll();
+        $items = $this->getDoctrine()->getRepository(Item::class)->findAll();
         $dir    = './img/sponsors';
         $array_files = scandir($dir);
 
@@ -54,6 +56,7 @@ class HomeController extends AbstractController
                 'form' => $form->createView(),
                 'posts' => $posts,
                 'reads' => $reads,
+                'items' => $items,
                 'array_files' => $array_files,
 
             ]

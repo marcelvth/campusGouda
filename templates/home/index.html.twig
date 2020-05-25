@@ -78,7 +78,7 @@
                         {% endfor %}
                     </div>
                     {% if app.user %}
-                        <h4 class="text-black-50 text-right"><a href="{{ path('blog_new') }}">< class="fas <i class=" fa fa-plus text-black-50"></i></a> Nieuw bericht!</h4>
+                        <h4 class="text-black-50 text-right"><a href="{{ path('blog_new') }}"><i class="fas fa-plus text-black-50"></i></a> Nieuw bericht!</h4>
                     {% endif %}
                 </div>
             </div>
@@ -124,15 +124,18 @@
     <section id="overgouda" class="py-5">
         <div class="container-fluid">
             <div class="row info-margin m-auto w-75">
-                {% for post in posts %}
+                {% for item in items %}
                     <div class="col-sm-12 col-lg-6 overGouda-cols">
-                        <h3 class="text_title">{{ post.title }} {% if app.user %}<a
-                                href="{{ path('blog_edit', {'id': post.id}) }}"><i class="fas fa-pen text-black-50"></i>
+                        <h3 class="text_title">{{ item.title }} {% if app.user %}<a
+                                href="{{ path('item_edit', {'id': item.id}) }}"><i class="fas fa-pen text-black-50"></i>
                                 </a>{% endif %}</h3>
-                        <p class=" text-wrap">{{ post.body|striptags|slice(0, 250) }}</p>
+                        <p class=" text-wrap">{{ item.body|striptags|slice(0, 500) }}</p>
                     </div>
                 {% endfor %}
             </div>
+            {% if app.user %}
+                <h4 class="text-black-50 text-right"><a href="{{ path('item_new') }}"><i class=" fas fa-plus text-black-50"></i></a> Nieuw!</h4>
+            {% endif %}
         </div>
     </section>
 
