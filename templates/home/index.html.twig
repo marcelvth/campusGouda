@@ -129,7 +129,7 @@
                         <h3 class="text_title">{{ item.title }} {% if app.user %}<a
                                 href="{{ path('item_edit', {'id': item.id}) }}"><i class="fas fa-pen text-black-50"></i>
                                 </a>{% endif %}</h3>
-                        <p class=" text-wrap">{{ item.body|striptags{#|slice(0, 500)#} }}</p>
+                        <p class=" text-wrap">{{ item.body|striptags }}</p>   {#|slice(0, 500)#}
                     </div>
                 {% endfor %}
             </div>
