@@ -25,22 +25,22 @@ class HomeController extends AbstractController
 
             $contactFormData = $form->getData();
 
-            dump($contactFormData);
+            //dump($contactFormData);
 
             $message = (new \Swift_Message($contactFormData['Onderwerp']))
                 ->setFrom($contactFormData['Uw_Email'])
-                ->setTo('je.email@gmail.com')
+                ->setTo('info@campusgouda.nl')
                 ->setBody(
                     $contactFormData['Bericht']
                 );
 
             $mailer->send($message);
 
-            $this->addFlash('success', 'Mail has been sent');
+            $this->addFlash('success', 'Mail is verzonden');
 
-            //return $this->redirectToRoute('contact');
+            return $this->redirectToRoute('home');
 
-            $form = $this->createForm(new ContactType(), $form);
+            //$form = $this->createForm(new ContactType(), $form);
         }
 
         $posts = $this->getDoctrine()->getRepository(Blog::class)->findAll();
