@@ -33,8 +33,8 @@
                     <td>{{ blog.updatedAt ? blog.updatedAt|date('Y-m-d H:i:s') : '' }}</td>
 #}
                     <td>
-                        <a href="{{ path('blog_show', {'id': blog.id}) }}">show</a>
-                        <a href="{{ path('blog_edit', {'id': blog.id}) }}">edit</a>
+                        <a href="{{ path('blog_show', {'id': blog.id}) }}" class="text-dark">show</a>
+                        <a href="{{ path('blog_edit', {'id': blog.id}) }}" class="text-dark">edit</a>
                     </td>
                 </tr>
             {% else %}
@@ -45,7 +45,7 @@
             </tbody>
         </table>
 
-        <a href="{{ path('blog_new') }}">Create new</a>
+        <a href="{{ path('blog_new') }}" class="text-dark">Create new</a>
     </div>
 
 {% endblock %}
