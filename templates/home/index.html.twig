@@ -77,6 +77,9 @@
                             </div>
                         {% endfor %}
                     </div>
+                    {% if app.user %}
+                        <h4 class="text-black-50 text-right"><a href="{{ path('blog_new') }}">< class="fas <i class=" fa fa-plus text-black-50"></i></a> Nieuw bericht!</h4>
+                    {% endif %}
                 </div>
             </div>
         </div>
