@@ -45,6 +45,8 @@ class HomeController extends AbstractController
 
         $posts = $this->getDoctrine()->getRepository(Blog::class)->findAll();
         $reads = $this->getDoctrine()->getRepository(Read::class)->findAll();
+        $dir    = './img/sponsors';
+        $array_files = scandir($dir);
 
         return $this->render('home/index.html.twig', [
 
@@ -52,6 +54,7 @@ class HomeController extends AbstractController
                 'form' => $form->createView(),
                 'posts' => $posts,
                 'reads' => $reads,
+                'array_files' => $array_files,
 
             ]
         );
