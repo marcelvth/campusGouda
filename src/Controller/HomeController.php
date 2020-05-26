@@ -45,6 +45,9 @@ class HomeController extends AbstractController
         }
 
         $posts = $this->getDoctrine()->getRepository(Blog::class)->findAll();
+        foreach ($posts as $post) {
+            $post->setBody(substr($post->getBody(),0, strpos(wordwrap($post->getBody(), 300), "\n" )).'[ Klik Meerlezen ]');
+        }
         $reads = $this->getDoctrine()->getRepository(Read::class)->findAll();
         $items = $this->getDoctrine()->getRepository(Item::class)->findAll();
         $dir    = './img/sponsors';

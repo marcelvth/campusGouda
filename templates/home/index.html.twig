@@ -65,7 +65,7 @@
                                      alt="{{ post.title }}">
                                 <div class="card-body">
                                     <h5 class="card-title">{{ post.title }}</h5>
-                                    <p class="card-text">{{ post.body|striptags|slice(0, 250) }}</p>
+                                    <p class="card-text">{{ post.body|raw }}</p> {#|truncate(250, true, "read_more_link")#}
                                 </div>
                                 <div class="card-footer">
                                     <small class="text-muted"><a href="/viewpost/{{ post.id }}" class="btn btn-primary">Meer
