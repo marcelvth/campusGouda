@@ -23,7 +23,7 @@
 
 .btn-outline-green {
   background-color: $white;
-  border: 2px solid $blue-light;
+  border: 1px solid $blue-light;
   color: $primary;
 
   &:active, &:focus {
@@ -59,7 +59,7 @@
   &:active, &:hover {
     background-color: darken($primary, 7.5%) !important;
     border-color: darken($primary, 7.5%) !important;
-    border: 2px solid $white !important;
+    border: 1px solid $white !important;
     color: $white;
   }
 
