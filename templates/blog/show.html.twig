@@ -22,22 +22,18 @@
             </tr>
             <tr>
                 <th>Img_path</th>
-                <td>{{ blog.imgPath }}</td>
+                <td>{{ vich_uploader_asset(blog, 'imageFile') }}</td>
             </tr>
             <tr>
-                <th>CreatedAt</th>
-                <td>{{ blog.createdAt ? blog.createdAt|date('Y-m-d H:i:s') : '' }}</td>
-            </tr>
-            <tr>
-                <th>UpdatedAt</th>
-                <td>{{ blog.updatedAt ? blog.updatedAt|date('Y-m-d H:i:s') : '' }}</td>
+                <th>Author</th>
+                <td>{{ blog.author }}</td>
             </tr>
             </tbody>
         </table>
 
-        <a href="{{ path('blog_index') }}">back to list</a>
+        <a href="{{ path('blog_index') }}" class="text-dark">back to list</a>
 
-        <a href="{{ path('blog_edit', {'id': blog.id}) }}">edit</a>
+        <a href="{{ path('blog_edit', {'id': blog.id}) }}" class="text-dark">edit</a>
 
         {{ include('blog/_delete_form.html.twig') }}
     </div>
