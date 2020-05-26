@@ -61,6 +61,10 @@ import '../css/app.css';
         gutter: 20,
         autoWidth: true,
         autoplay: true,
+        edgePadding: 40,
+        lazyload: true,
+        speed: 800,
+        height: 'auto',
         controlsPosition: 'bottom',
         arrowKeys: true,
         autoplayButtonOutput: false,
@@ -75,7 +79,7 @@ import '../css/app.css';
                 gutter: 30
             },
             900: {
-                items: 17
+                items:4
             }
         }
     });

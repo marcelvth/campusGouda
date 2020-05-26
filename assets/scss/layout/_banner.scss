@@ -48,14 +48,14 @@
     height: 100vh;
     .header {
       position: absolute;
-      width: 394px;
+      width: 390px;
       height: 350px;
       overflow: hidden;
       top: 36%;
-      right: 0;
+      right: 0px;
       transform: translate(0,-50%);
       #logo {
-        width: 390px;
+        width: 240px;
         height: 400px;
       }
     }
