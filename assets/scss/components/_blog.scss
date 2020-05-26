@@ -1,9 +1,7 @@
 #blog {
   padding: 120px 0;
   .blog {
-    display: flex;
-    flex-direction: column;
-    column-count: 1;
+    display: inline-block;
     
     .post {
       max-width: 30%;

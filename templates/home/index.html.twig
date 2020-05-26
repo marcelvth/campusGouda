@@ -69,16 +69,7 @@
 
     <section id="overgouda" class="py-5">
         <div class="container-fluid">
-            <div class="row info-margin m-auto w-75">
-                {% for post in posts %}
-                    <div class="col-sm-12 col-lg-6 overGouda-cols">
-                        <h3 class="text_title">{{ post.title }} {% if app.user %}<a
-                                href="{{ path('blog_edit', {'id': post.id}) }}"><i class="fas fa-pen"></i>
-                                </a>{% endif %}</h3>
-                        <p class=" text-wrap">{{ post.body | raw }}</p>
-                    </div>
-                {% endfor %}
-            </div>
+
         </div>
     </section>
 
