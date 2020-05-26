@@ -117,4 +117,24 @@ class HomeController extends AbstractController
 ////            'form' => $form->createView()
 ////        ]);
 //    }
+
+    /**
+     * @Route("/privacy-statement", name="privacy_statement")
+     */
+    public function privacy()
+    {
+        return $this->render('home/privacy.html.twig', [
+            'controller_name' => 'HomeController',
+        ]);
+    }
+
+    /**
+     * @Route("/terms-of-service", name="terms_service")
+     */
+    public function terms()
+    {
+        return $this->render('home/terms.html.twig', [
+            'controller_name' => 'HomeController',
+        ]);
+    }
 }
