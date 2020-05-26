@@ -49,7 +49,16 @@ section {
 .overGouda-cols {
   padding-right: 70px;
 }
+a {
+  background-color: white;
+  color: $primary;
 
+  &:hover {
+    background-color: darken($primary, 7.5%);
+    color: $white;
+  }
+
+}
 #media {
   background-color: $primary;
   color: $white;

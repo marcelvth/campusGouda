@@ -26,6 +26,17 @@
           .post-footer {
             padding: 10px;
             background-color: $secBg;
+
+            a {
+              background-color: white;
+              color: $primary;
+
+              &:hover {
+                background-color: darken($primary, 7.5%);
+                color: $white;
+              }
+
+            }
           }
         }
       }
