@@ -62,6 +62,7 @@ import '../css/app.css';
         autoWidth: true,
         autoplay: true,
         edgePadding: 40,
+        slideBy: 2,
         speed: 800,
         controlsPosition: 'bottom',
         arrowKeys: true,
