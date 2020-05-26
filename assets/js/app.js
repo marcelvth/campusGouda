@@ -57,7 +57,7 @@ import '../css/app.css';
 
     const slider = tns({
         container: 'ul.slider',
-        items: 3,
+        items: 17,
         gutter: 20,
         autoWidth: true,
         autoplay: true,
@@ -75,7 +75,7 @@ import '../css/app.css';
                 gutter: 30
             },
             900: {
-                items: 4
+                items: 17
             }
         }
     });
