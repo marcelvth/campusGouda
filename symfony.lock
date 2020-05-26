@@ -75,6 +75,9 @@
     "doctrine/reflection": {
         "version": "v1.1.0"
     },
+    "doctrine/sql-formatter": {
+        "version": "1.1.1"
+    },
     "egulias/email-validator": {
         "version": "2.1.15"
     },
@@ -101,9 +104,6 @@
         "files": [
             "config/packages/google_recaptcha.yaml"
         ]
-    },
-    "jdorn/sql-formatter": {
-        "version": "v1.2.17"
     },
     "jms/metadata": {
         "version": "2.1.0"
@@ -600,7 +600,6 @@
         },
         "files": [
             "./config/packages/vich_uploader.yaml"
-            "config/packages/vich_uploader.yaml"
         ]
     },
     "webimpress/safe-writer": {
