@@ -57,18 +57,16 @@ import '../css/app.css';
 
     const slider = tns({
         container: 'ul.slider',
-        items: 17,
+        items: 5,
         gutter: 20,
         autoWidth: true,
         autoplay: true,
         edgePadding: 40,
-        lazyload: true,
+        slideBy: 5,
         speed: 800,
-        height: 'auto',
         controlsPosition: 'bottom',
         arrowKeys: true,
         autoplayButtonOutput: false,
-
         responsive: {
             640: {
                 edgePadding: 20,
@@ -79,7 +77,7 @@ import '../css/app.css';
                 gutter: 30
             },
             900: {
-                items:4
+                items:5
             }
         }
     });
