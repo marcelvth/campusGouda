@@ -48,7 +48,7 @@ class HomeController extends AbstractController
                 ->setTo($lform->getViewData()->getEmail())
                 ->setCc('info@campusgouda.nl')
                 ->setBody(
-                    'U heeft zich aangemeld bij Nieuwsbrief Campus Goude met email adres : '.$lform->getViewData()->getEmail()
+                    'U heeft zich aangemeld bij Nieuwsbrief Campus Gouda met email adres : '.$lform->getViewData()->getEmail()
                 );
 
             $mailer->send($message);
