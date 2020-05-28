@@ -3,9 +3,11 @@
 namespace App\Controller;
 
 use App\Entity\Item;
+use App\Entity\Letter;
 use App\Entity\Read;
 use App\Form\ContactType;
 use App\Entity\Blog;
+use App\Form\LetterType;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\Routing\Annotation\Route;
@@ -18,9 +20,24 @@ class HomeController extends AbstractController
      */
     public function index(Request $request, \Swift_Mailer $mailer)
     {
+        $letter = new Letter();
+        $lform = $this->createForm(LetterType::class, $letter);
+        $lform->handleRequest($request);
+
         $form = $this->createForm(ContactType::class);
 
         $form->handleRequest($request);
+
+        if ($lform->isSubmitted() && $lform->isValid()) {
+            $entityManager = $this->getDoctrine()->getManager();
+            $entityManager->persist($letter);
+            $entityManager->flush();
+
+            $this->addFlash('success', 'Aangemeld voor nieuwsbrief!');
+
+            return $this->redirectToRoute('home');
+
+        }
 
         if ($form->isSubmitted() && $form->isValid()) {
 
@@ -57,6 +74,7 @@ class HomeController extends AbstractController
 
                 'controller_name' => 'HomeController',
                 'form' => $form->createView(),
+                'lform' => $lform->createView(),
                 'posts' => $posts,
                 'reads' => $reads,
                 'items' => $items,
