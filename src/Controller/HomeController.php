@@ -50,6 +50,8 @@ class HomeController extends AbstractController
                     'U heeft zich aangemeld bij Nieuwsbrief Campus Goude met email adres : '.$lform->getViewData()->getEmail()
                 );
 
+            $mailer->send($message);
+
             $this->addFlash('notice', 'Aangemeld voor nieuwsbrief!');
 
             return $this->redirectToRoute('home');
