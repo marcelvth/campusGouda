@@ -80,7 +80,22 @@
                 <div class="col-sm-12 col-lg-4 pl-4">
                     <h6 class="f-header2">Nieuwsbrief</h6>
                     <hr class="hr-line">
-                    <p>Blijf op de hoogte en schrijf je in voor de nieuwsbrief van Campus Gouda: [invulveld]</p>
+                    <p>Blijf op de hoogte en schrijf je in voor de nieuwsbrief van Campus Gouda:
+                        {% for message in app.flashes('notice') %}
+                    <div class="flash-notice alert-success text-center">
+                        <h3 class="text-success">{{ message }}</h3>
+                    </div>
+                    {% endfor %}
+
+                    {% if lform is defined %}
+                        {{ form_start(lform) }}
+                        {{ form_widget(lform) }}
+                        <input type="submit" value="Verstuur" class="btn btn-lg btn-outline-green mb-4">
+                        {{ form_end(lform) }}
+                    {% else %}
+                        <a href="{{ path('home') }}">home</a>
+                    {% endif %}
+                    </p>
                     <ul class="d-flex">
                         <li></li>
                         <li></li>
@@ -94,7 +109,8 @@
 
     <div class="text-center pt-3 pb-1 bg-dark">
         <hr class="hr-credits">
-        <p> Build by: Studenten van <a href="https://www.mborijnland.nl" target="_blank" class="text-success">mboRijnland</a></p>
+        <p> Build by: Studenten van <a href="https://www.mborijnland.nl" target="_blank" class="text-success">mboRijnland</a>
+        </p>
     </div>
 </footer>
 {{ encore_entry_script_tags('app') }}

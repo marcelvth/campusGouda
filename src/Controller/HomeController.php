@@ -30,10 +30,19 @@ class HomeController extends AbstractController
 
         if ($lform->isSubmitted() && $lform->isValid()) {
             $entityManager = $this->getDoctrine()->getManager();
+            $ltr = $entityManager->getRepository('App:Letter')->findBy(['email' => $lform->getViewData()->getEmail()]);
+            if ($ltr) {
+                $this->addFlash('notice', 'Reeds eerder al aangemeld voor nieuwsbrief!');
+
+                return $this->redirectToRoute('home');
+
+            }
+            $letter->setMoment(new \DateTime('now'));
+            $letter->setIp($this->container->get('request_stack')->getCurrentRequest()->getClientIp());
             $entityManager->persist($letter);
             $entityManager->flush();
 
-            $this->addFlash('success', 'Aangemeld voor nieuwsbrief!');
+            $this->addFlash('notice', 'Aangemeld voor nieuwsbrief!');
 
             return $this->redirectToRoute('home');
 

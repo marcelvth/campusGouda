@@ -13,8 +13,8 @@ class LetterType extends AbstractType
     {
         $builder
             ->add('email')
-            ->add('moment')
-            ->add('ip')
+/*            ->add('moment')
+            ->add('ip')*/
         ;
     }
 
