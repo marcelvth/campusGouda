@@ -65,7 +65,7 @@ class LetterController extends AbstractController
 
     /**
      * @Route("/{id}", name="letter_show", methods={"GET"})
-     * @IsGranted("ROLE_ADMIN")
+     * @IsGranted("ROLE_USER")
      */
     public function show(Letter $letter): Response
     {
@@ -76,7 +76,7 @@ class LetterController extends AbstractController
 
     /**
      * @Route("/{id}/edit", name="letter_edit", methods={"GET","POST"})
-     * @IsGranted("ROLE_ADMIN")
+     * @IsGranted("ROLE_USER")
      */
     public function edit(Request $request, Letter $letter): Response
     {
@@ -97,7 +97,7 @@ class LetterController extends AbstractController
 
     /**
      * @Route("/{id}", name="letter_delete", methods={"DELETE"})
-     * @IsGranted("ROLE_ADMIN")
+     * @IsGranted("ROLE_USER")
      */
     public function delete(Request $request, Letter $letter): Response
     {
@@ -107,6 +107,6 @@ class LetterController extends AbstractController
             $entityManager->flush();
         }
 
-        return $this->redirectToRoute('letter_index');
+        return $this->redirectToRoute('letter_export');
     }
 }
