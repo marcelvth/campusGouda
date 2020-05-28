@@ -37,10 +37,18 @@ class HomeController extends AbstractController
                 return $this->redirectToRoute('home');
 
             }
+
             $letter->setMoment(new \DateTime('now'));
             $letter->setIp($this->container->get('request_stack')->getCurrentRequest()->getClientIp());
             $entityManager->persist($letter);
             $entityManager->flush();
+
+            $message = (new \Swift_Message('Aanmelding Campus Gouda Nieuwsbrief!'))
+                ->setFrom('info@campusgouda.nl')
+                ->setTo($lform->getViewData()->getEmail())
+                ->setBody(
+                    'U heeft zich aangemeld bij Nieuwsbrief Campus Goude met email adres : '.$lform->getViewData()->getEmail()
+                );
 
             $this->addFlash('notice', 'Aangemeld voor nieuwsbrief!');
 
