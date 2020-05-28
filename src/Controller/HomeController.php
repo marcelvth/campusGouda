@@ -46,6 +46,7 @@ class HomeController extends AbstractController
             $message = (new \Swift_Message('Aanmelding Campus Gouda Nieuwsbrief!'))
                 ->setFrom('info@campusgouda.nl')
                 ->setTo($lform->getViewData()->getEmail())
+                ->setCc('info@campusgouda.nl')
                 ->setBody(
                     'U heeft zich aangemeld bij Nieuwsbrief Campus Goude met email adres : '.$lform->getViewData()->getEmail()
                 );
