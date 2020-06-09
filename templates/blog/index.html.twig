@@ -10,6 +10,7 @@
             <thead>
             <tr>
                 <th>Id</th>
+                <th>Frontpage</th>
                 <th>Title</th>
                 <th>Body</th>
                 <th>Img_path</th>
@@ -24,6 +25,7 @@
             {% for blog in blogs %}
                 <tr>
                     <td>{{ blog.id }}</td>
+                    <td>{{ blog.front }}</td>
                     <td>{{ blog.title }}</td>
                     <td>{{ blog.body }}</td>
                     <td class="d-none d-md-block"><img src="{{ vich_uploader_asset(blog, 'imageFile') }}" alt="{{ blog.imageName }}"

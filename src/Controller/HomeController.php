@@ -81,7 +81,7 @@ class HomeController extends AbstractController
             //$form = $this->createForm(new ContactType(), $form);
         }
 
-        $posts = $this->getDoctrine()->getRepository(Blog::class)->findAll();
+        $posts = $this->getDoctrine()->getRepository(Blog::class)->findBy(['front' => true]);
         foreach ($posts as $post) {
             $post->setBody(substr($post->getBody(),0, strpos(wordwrap($post->getBody(), 300), "\n" ))/*.'[ Klik Meerlezen ]'*/);
         }

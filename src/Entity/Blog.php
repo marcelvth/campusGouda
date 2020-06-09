@@ -65,6 +65,11 @@ class Blog
     protected $updatedAt;
 
     /**
+     * @ORM\Column(type="boolean")
+     */
+    private $front;
+
+    /**
      * If manually uploading a file (i.e. not using Symfony Form) ensure an instance
      * of 'UploadedFile' is injected into this setter to trigger the update. If this
      * bundle's configuration parameter 'inject_on_load' is set to 'true' this setter
@@ -146,6 +151,18 @@ class Blog
     public function setBody(string $body): self
     {
         $this->body = $body;
+
+        return $this;
+    }
+
+    public function getFront(): ?bool
+    {
+        return $this->front;
+    }
+
+    public function setFront(bool $front): self
+    {
+        $this->front = $front;
 
         return $this;
     }
