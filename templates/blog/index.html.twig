@@ -25,9 +25,9 @@
             {% for blog in blogs %}
                 <tr>
                     <td>{{ blog.id }}</td>
-                    <td>{% if (blog.front) %}published{% else %}not published{% endif %}</td>
+                    <td>{% if (blog.front) %}on front{% else %}not on front{% endif %}</td>
                     <td>{{ blog.title }}</td>
-                    <td>{{ blog.body }}</td>
+                    <td>{{ blog.body | raw}}</td>
                     <td class="d-none d-md-block"><img src="{{ vich_uploader_asset(blog, 'imageFile') }}" alt="{{ blog.imageName }}"
                                                        style="height:50px;"/></td>
 {#
