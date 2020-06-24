@@ -1,0 +1,34 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Letter{% endblock %}
+
+{% block body %}
+    <h1>Letter</h1>
+
+    <table class="table">
+        <tbody>
+            <tr>
+                <th>Id</th>
+                <td>{{ letter.id }}</td>
+            </tr>
+            <tr>
+                <th>Email</th>
+                <td>{{ letter.email }}</td>
+            </tr>
+            <tr>
+                <th>Moment</th>
+                <td>{{ letter.moment ? letter.moment|date('Y-m-d H:i:s T') : '' }}</td>
+            </tr>
+            <tr>
+                <th>Ip</th>
+                <td>{{ letter.ip }}</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <a href="{{ path('letter_index') }}" class="text-dark">back to list</a>
+
+    <a href="{{ path('letter_edit', {'id': letter.id}) }}" class="text-dark">edit</a>
+
+    {{ include('letter/_delete_form.html.twig') }}
+{% endblock %}

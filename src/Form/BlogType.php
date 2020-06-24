@@ -15,6 +15,7 @@ class BlogType extends AbstractType
     {
         $builder
             ->add('title')
+            ->add('front')
             ->add('body', CKEditorType::class, [
                 'config' => array('toolbar' => 'full'),
             ])

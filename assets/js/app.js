@@ -64,7 +64,7 @@ import '../css/app.css';
         edgePadding: 40,
         slideBy: 2,
         speed: 800,
-        controlsPosition: 'bottom',
+        controls: false,
         arrowKeys: true,
         autoplayButtonOutput: false,
         responsive: {
