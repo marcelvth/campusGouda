@@ -28,14 +28,17 @@
                             </div>
                             <div class="card-footer">
                                 <div class="btn-group">
-                                    <a href="{{ path('blog_show', {'id': blog.id}) }}" class="text-dark">
+                                    <a href="/viewpost/{{ blog.id }}" class="text-dark">
                                         <button type="button" class="btn btn-sm btn-outline-secondary btn-primary">View
                                         </button>
                                     </a>
-                                    <a href="{{ path('blog_edit', {'id': blog.id}) }}" class="text-dark">
-                                        <button type="button" class="btn btn-sm btn-outline-secondary btn-primary">Edit
-                                        </button>
-                                    </a>
+                                    {% if (is_granted('ROLE_USER')) %}
+                                        <a href="{{ path('blog_edit', {'id': blog.id}) }}" class="text-dark">
+                                            <button type="button" class="btn btn-sm btn-outline-secondary btn-primary">
+                                                Edit
+                                            </button>
+                                        </a>
+                                    {% endif %}
                                 </div>
                                 <small class="text-muted">{% if (blog.front) %}On{% else %}Off{% endif %}
                                     frontpage</small>
@@ -46,8 +49,11 @@
             </div>
         </div>
 
-
-        <a href="{{ path('blog_new') }}" class="text-dark"><button type="button" class="btn btn-sm btn-outline-secondary btn-primary">Create new</button></a>
+        {% if (is_granted('ROLE_USER')) %}
+            <a href="{{ path('blog_new') }}" class="text-dark">
+                <button type="button" class="btn btn-sm btn-outline-secondary btn-primary">Create new</button>
+            </a>
+        {% endif %}
     </div>
 
 {% endblock %}

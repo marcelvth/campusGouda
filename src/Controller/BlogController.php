@@ -13,7 +13,6 @@ use Sensio\Bundle\FrameworkExtraBundle\Configuration\Security;
 
 /**
  * @Route("/blog")
- *
  */
 class BlogController extends AbstractController
 {
@@ -89,6 +88,7 @@ class BlogController extends AbstractController
 
     /**
      * @Route("/{id}", name="blog_show", methods={"GET"})
+     * @Security("is_granted('ROLE_USER')")
      */
     public function show(Blog $blog): Response
     {
