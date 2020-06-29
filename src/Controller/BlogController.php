@@ -13,7 +13,6 @@ use Sensio\Bundle\FrameworkExtraBundle\Configuration\Security;
 
 /**
  * @Route("/blog")
- * @Security("is_granted('ROLE_USER')")
  */
 class BlogController extends AbstractController
 {
@@ -23,7 +22,7 @@ class BlogController extends AbstractController
     public function index(BlogRepository $blogRepository): Response
     {
         return $this->render('blog/index.html.twig', [
-            'blogs' => $blogRepository->findAll(),
+            'blogs' => $blogRepository->findBy([],['id' => 'DESC']),
         ]);
     }
 
@@ -64,6 +63,7 @@ class BlogController extends AbstractController
 
     /**
      * @Route("/new", name="blog_new", methods={"GET","POST"})
+     * @Security("is_granted('ROLE_USER')")
      */
     public function new(Request $request): Response
     {
@@ -88,6 +88,7 @@ class BlogController extends AbstractController
 
     /**
      * @Route("/{id}", name="blog_show", methods={"GET"})
+     * @Security("is_granted('ROLE_USER')")
      */
     public function show(Blog $blog): Response
     {
@@ -98,6 +99,7 @@ class BlogController extends AbstractController
 
     /**
      * @Route("/{id}/edit", name="blog_edit", methods={"GET","POST"})
+     * @Security("is_granted('ROLE_USER')")
      */
     public function edit(Request $request, Blog $blog): Response
     {
@@ -119,6 +121,7 @@ class BlogController extends AbstractController
 
     /**
      * @Route("/{id}", name="blog_delete", methods={"DELETE"})
+     * @Security("is_granted('ROLE_ADMIN')")
      */
     public function delete(Request $request, Blog $blog): Response
     {
