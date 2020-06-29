@@ -121,7 +121,7 @@ class BlogController extends AbstractController
 
     /**
      * @Route("/{id}", name="blog_delete", methods={"DELETE"})
-     * @Security("is_granted('ROLE_USER')")
+     * @Security("is_granted('ROLE_ADMIN')")
      */
     public function delete(Request $request, Blog $blog): Response
     {
