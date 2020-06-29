@@ -71,7 +71,7 @@
                                     <p class="card-text">{{ post.body|raw }}</p> {#|truncate(250, true, "read_more_link")#}
                                 </div>
                                 <div class="card-footer">
-                                    <small class="text-muted"><a href="/viewpost/{{ post.id }}" class="btn btn-primary">Meer
+                                    <small class="text-muted"><a href="/viewpost/{{ post.id }}" class="btn btn-green">Meer
                                             lezen</a> {% if app.user %}<a
                                             href="{{ path('blog_edit', {'id': post.id}) }}"><i
                                                         class="fas fa-pen text-black-50"></i>
