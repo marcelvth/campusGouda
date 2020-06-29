@@ -1,5 +1,5 @@
 .banner {
-  height: calc(50vh + 91px);
+  height: calc(60vh + 91px);
   background-image: url("/img/banner.jpg");
   background-size: cover;
   background-position: center;
@@ -8,14 +8,12 @@
   justify-content: center;
 
   .header {
-    width: 88%;
+
+    width: unset;
     display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 64%;
     flex-direction: column;
-    margin: auto;
-    padding: 15px;
+    justify-content: center;
+    align-self: center;
 
     a {
       background-color: white;
@@ -28,15 +26,13 @@
 
     }
 
-
     #logo {
       background-image: url(/img/CG_Logo.png);
       background-repeat: no-repeat;
       background-size: contain;
-      width: 209px;
-      background-position: center;
-      height: 401px;
-      margin: auto;
+      width: 267px;
+      height: 300px;
+      background-color: $white;
     }
     a {
       margin-top: auto;
@@ -48,16 +44,9 @@
   .banner {
     height: 100vh;
     .header {
-      position: absolute;
-      width: 266px;
-      height: 350px;
-      overflow: hidden;
-      top: 50%;
-      right: 6%;
-      transform: translate(0,-50%);
-
+      width: 80%;
       #logo {
-        width: 257px;
+        align-self: flex-end;
       }
     }
   }
