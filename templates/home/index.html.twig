@@ -23,9 +23,9 @@
                                         </a>{% endif %}</h2>
                                 <p class="lead">{{ reads[0].body | raw }}</p>
                             {% else %}
-                                <h2 class="display-4 pb-4">Lorem ipsum {% if app.user %}<a
+                                <h1 class="pb-4">Lorem ipsum {% if app.user %}<a
                                         href="{{ path('read_new') }}"><i
-                                                    class="fas fa-plus"></i></a>{% endif %}</h2>
+                                                    class="fas fa-plus"></i></a>{% endif %}</h1>
                                 <p class="lead">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
                                     commodo
                                     ligula eget
@@ -75,7 +75,7 @@
                                         <a class="twitter-share-button"
                                            href="https://twitter.com/intent/tweet"
                                            data-size="large"
-                                           data-text="custom share text"
+                                           data-text="{{ post.body|raw|u.truncate(50, '...') }}"
                                            data-url="https://dev.twitter.com/web/tweet-button"
                                            data-hashtags="CampusGouda"
                                            data-via="twitterdev"
@@ -87,6 +87,7 @@
                                              data-layout="button_count"
                                              data-size="large">
                                         </div>
+                                        <script type="IN/Share" data-url="https://www.campusgouda.nl/viewpost/{{ post.title }}"></script>
                                     </div>
                                     <a href="/viewpost/{{ post.id }}" class="btn btn-green">
                                         Meer lezen
@@ -244,7 +245,6 @@
 
 {% endblock %}
 {% block javascripts %}
-
     <script>
         (function(d, s, id) {
             var js, fjs = d.getElementsByTagName(s)[0];
@@ -255,4 +255,5 @@
         }(document, 'script', 'facebook-jssdk'));
     </script>
     <script type="text/javascript" async src="https://platform.twitter.com/widgets.js"></script>
+    <script src="https://platform.linkedin.com/in.js" type="text/javascript">lang: en_US</script>
 {% endblock %}

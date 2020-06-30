@@ -35,11 +35,14 @@
     .social-buttons {
       display: flex;
       align-items: center;
-
-      iframe, div, span {
-        &:first-child {
-          margin-right: 5px;
-        }
+      #twitter-widget-3 {
+        margin-right: 5px;
+      }
+      .IN-widget {
+        transform: scale(1.39);
+      }
+      .fb_iframe_widget {
+        margin-right: 15px;
       }
     }
     a.btn-green {
