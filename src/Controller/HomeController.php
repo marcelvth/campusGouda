@@ -20,6 +20,7 @@ class HomeController extends AbstractController
      */
     public function index(Request $request, \Swift_Mailer $mailer)
     {
+
         $letter = new Letter();
         $lform = $this->createForm(LetterType::class, $letter);
         $lform->handleRequest($request);
@@ -82,9 +83,9 @@ class HomeController extends AbstractController
         }
 
         $posts = $this->getDoctrine()->getRepository(Blog::class)->findBy(['front' => true]);
-        foreach ($posts as $post) {
-            $post->setBody(substr($post->getBody(),0, strpos(wordwrap($post->getBody(), 300), "\n" )).'......');
-        }
+//        foreach ($posts as $post) {
+//            $post->setBody(substr($post->getBody(),0, strpos(wordwrap($post->getBody(), 300), "\n" )).'......');
+//        }
         $reads = $this->getDoctrine()->getRepository(Read::class)->findAll();
         $items = $this->getDoctrine()->getRepository(Item::class)->findAll();
         $dir    = './img/sponsors';
