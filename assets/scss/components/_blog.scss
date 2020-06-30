@@ -1,34 +1,60 @@
 #blog {
   padding: 120px 0;
-  .card-deck{
-    .card {
-      border: 1px solid $primary;
-        .card-img-top {
-          height: 400px;
-          background-repeat: no-repeat;
-          background-position: center;
-          background-size: cover;
-        }
-        .card-body {
+}
 
-        }
-
-        .card-footer {
-          padding: 10px;
-          background-color: $secBg;
-
-          a {
-            background-color: $primary;
-            color: white;
-
-            &:hover {
-              background-color: darken($primary, 7.5%);
-              color: $white;
-            }
-
-          }
-        }
-
+#viewpost {
+  .card {
+    margin: 50px auto;
+    max-width: 900px;
+    .card-img-top {
+      height: 475px;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
     }
   }
 }
+
+.card {
+  border: 1px solid $primary;
+  .card-img-top {
+    height: 400px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  .card-body {
+
+  }
+
+  .card-footer {
+    padding: 10px;
+    background-color: $secBg;
+    display: flex;
+
+    .social-buttons {
+      display: flex;
+      align-items: center;
+
+      iframe, div, span {
+        &:first-child {
+          margin-right: 5px;
+        }
+      }
+    }
+    a.btn-green {
+      margin-left: auto;
+      background-color: $primary;
+      color: white;
+
+      &:hover {
+        background-color: darken($primary, 7.5%);
+        color: $white;
+      }
+
+    }
+  }
+
+}
+
+

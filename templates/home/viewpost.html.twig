@@ -1,27 +1,69 @@
 {% extends 'base.html.twig' %}
 
 {% block title %}{{ post.title }}{% endblock %}
-
- {% block stylesheets %}
+{% block meta %}
+    <meta property="og:url"                content="https://www.campusgouda.nl/viewpost/{{ post.title }}" />
+    <meta property="og:type"               content="article" />
+    <meta property="og:title"              content="{{ post.title }}" />
+    <meta property="og:description"        content="{{ post.body|raw|u.truncate(25, '...') }}" />
+    <meta property="og:image"              content="https://www.campusgouda.nl{{ vich_uploader_asset(post, 'imageFile') }}" />
+{% endblock %}
+{% block stylesheets %}
 
      <style>
          #viewpost {
              margin-top: 125px;
          }
      </style>
- {% endblock %}
+{% endblock %}
 {% block body %}
 <div class="container" id="viewpost">
-    <article class="card mb-5">
-        <img class="card-img-top" style="max-width: 850px" src="{{ vich_uploader_asset(post, 'imageFile') }}" alt="Card image cap">
+    <div class="card">
+        <div class="card-img-top" style="background-image: url('{{ vich_uploader_asset(post, 'imageFile') }}')"></div>
         <div class="card-body">
-            <h2 class="card-title">{{ post.title }}</h2>
-            <p class="card-text">{{  post.body|raw }}</p>
-
+            <h5 class="card-title">{{ post.title }}</h5>
+            <p class="card-text">{{ post.body|raw }}</p> {#|truncate(250, true, "read_more_link")#}
         </div>
-{#        <div class="card-footer text-muted">#}
-{#            @R.Get(R.Post_Date) @item.DateCreated.ToString("yyyy-MM-dd HH:mm")#}
-{#        </div>#}
-    </article>
+        <div class="card-footer">
+            <div class="social-buttons">
+                <a class="twitter-share-button"
+                   href="https://twitter.com/intent/tweet"
+                   data-size="large"
+                   data-text="{{ post.body|raw|u.truncate(50, '...') }}"
+                   data-url="https://dev.twitter.com/web/tweet-button"
+                   data-hashtags="CampusGouda"
+                   data-via="twitterdev"
+                   data-related="twitterapi,twitter">
+                    Tweet
+                </a>
+                <div class="fb-share-button"
+                     data-href="https://www.your-domain.com/your-page.html"
+                     data-layout="button_count"
+                     data-size="large">
+                </div>
+                <script type="IN/Share" data-url="https://www.campusgouda.nl/viewpost/{{ post.title }}"></script>
+            </div>
+        {% if app.user %}
+            <a href="{{ path('blog_edit', {'id': post.id}) }}">
+                <i class="fas fa-pen text-black-50"></i>
+            </a>
+        {% endif %}
+        </div>
+    </div>
 </div>
+{% endblock %}
+
+{% block javascripts %}
+    <script>
+        (function(d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s); js.id = id;
+            js.src = "https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.0";
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+    </script>
+    <script type="text/javascript" async src="https://platform.twitter.com/widgets.js"></script>
+    <script src="https://platform.linkedin.com/in.js" type="text/javascript">lang: en_US</script>
+
 {% endblock %}

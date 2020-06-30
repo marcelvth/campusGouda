@@ -11,9 +11,7 @@
     }
   }
 }
-//a.btn {
-//  color: $white !important;
-//}
+
 .btn-xl {
   font-size: 18px;
   padding: 20px 40px;
@@ -53,7 +51,7 @@
   background-color: $primary;
   border-color: $primary;
   border: 1px solid rgba($color: $white, $alpha: 0); //TODO: need fix
-
+  color: $white;
   &:active, &:hover {
     background-color: darken($primary, 7.5%) !important;
     border-color: darken($primary, 7.5%) !important;

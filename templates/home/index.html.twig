@@ -66,65 +66,53 @@
                         {% for post in posts %}
                             <div class="card">
                                 <div class="card-img-top" style="background-image: url('{{ vich_uploader_asset(post, 'imageFile') }}')"></div>
-{#                                <img src="{{ vich_uploader_asset(post, 'imageFile') }}" class="card-img-top"#}
-{#                                     alt="{{ post.title }}">#}
                                 <div class="card-body">
                                     <h5 class="card-title">{{ post.title }}</h5>
                                     <p class="card-text">{{ post.body|raw }}</p> {#|truncate(250, true, "read_more_link")#}
                                 </div>
                                 <div class="card-footer">
-                                    <small class="text-muted"><a href="/viewpost/{{ post.id }}" class="btn btn-green">Meer
-                                            lezen</a> {% if app.user %}<a
-                                            href="{{ path('blog_edit', {'id': post.id}) }}"><i
-                                                        class="fas fa-pen text-black-50"></i>
-                                            </a>{% endif %}</small>
+                                    <div class="social-buttons">
+                                        <a class="twitter-share-button"
+                                           href="https://twitter.com/intent/tweet"
+                                           data-size="large"
+                                           data-text="custom share text"
+                                           data-url="https://dev.twitter.com/web/tweet-button"
+                                           data-hashtags="CampusGouda"
+                                           data-via="twitterdev"
+                                           data-related="twitterapi,twitter">
+                                            Tweet
+                                        </a>
+                                        <div class="fb-share-button"
+                                             data-href="https://www.your-domain.com/your-page.html"
+                                             data-layout="button_count"
+                                             data-size="large">
+                                        </div>
+                                    </div>
+                                    <a href="/viewpost/{{ post.id }}" class="btn btn-green">
+                                        Meer lezen
+                                    </a>
+                                {% if app.user %}
+                                    <a href="{{ path('blog_edit', {'id': post.id}) }}">
+                                        <i class="fas fa-pen text-black-50"></i>
+                                    </a>
+                                {% endif %}
+
+
                                 </div>
                             </div>
                         {% endfor %}
                     </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-11 mx-auto d-flex py-3">
                     {% if app.user %}
                         <h4 class="text-black-50 text-right"><a href="{{ path('blog_new') }}"><i class="fas fa-plus text-black-50"></i></a> Nieuw bericht!</h4>
                     {% endif %}
-                    <a href="{{ path('blog_index') }}" class="text-dark"><button type="button" class="btn btn-sm btn-outline-secondary btn-primary">Archief</button></a>
+                    <a href="{{ path('blog_index') }}" class="ml-auto"><button type="button" class="btn  btn-green">Archief</button></a>
                 </div>
             </div>
         </div>
-
-
-        {#
-                <div class="container-fluid">
-                    <div class="row pt-lg-5">
-                        <div class="col-10 mx-auto">
-                            <div class="blog card-columns">
-                                {% for post in posts %}
-                                    <div class="post card">
-                                        <div class="post-outer">
-                                            <div class="post-inner">
-                                                <div class="post-head">
-                                                    <h3>{{ post.title }}</h3>
-                                                </div>
-                                                <div class="post-body">
-                                                    <img src="{{ vich_uploader_asset(post, 'imageFile') }}"
-                                                         class="card-img-top img-responsive img-thumbnail">
-                                                    {{ post.body|striptags|slice(0, 250) }}
-                                                </div>
-                                                <div class="post-footer">
-                                                    <a href="/viewpost/{{ post.id }}" class="btn btn-primary">Meer
-                                                        lezen</a> {% if app.user %}<a
-                                                        href="{{ path('blog_edit', {'id': post.id}) }}"><i
-                                                                    class="fas fa-pen text-black-50"></i>
-                                                        </a>{% endif %}
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                    </div>
-                                {% endfor %}
-                            </div>
-                        </div>
-                    </div>
-                </div>
-        #}
     </section>
 
     <section id="overgouda" class="py-5">
@@ -256,4 +244,15 @@
 
 {% endblock %}
 {% block javascripts %}
+
+    <script>
+        (function(d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s); js.id = id;
+            js.src = "https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.0";
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+    </script>
+    <script type="text/javascript" async src="https://platform.twitter.com/widgets.js"></script>
 {% endblock %}
