@@ -61,7 +61,7 @@
     <section id="blog">
         <div class="container-fluid">
             <div class="row pt-lg-5">
-                <div class="col-11 mx-auto">
+                <div class="col-md-11 col-sm-12 mx-auto">
                     <div class="card-deck">
                         {% for post in posts %}
                             <div class="card">
@@ -81,12 +81,11 @@
                                            data-text="{{ post.body|u.truncate(50, '...')|raw }}"
                                            data-url="https://dev.twitter.com/web/tweet-button"
                                            data-hashtags="CampusGouda"
-                                           data-via="twitterdev"
-                                           data-related="twitterapi,twitter">
+                                           data-via="twitterdev" >
                                             Tweet
                                         </a>
                                         <div class="fb-share-button"
-                                             data-href="https://www.your-domain.com/your-page.html"
+                                             data-href="https://www.campusgouda.nl/viewpost/{{ post.id }}"
                                              data-layout="button_count"
                                              data-size="large">
                                         </div>

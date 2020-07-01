@@ -7,42 +7,84 @@
      <style>
          #viewpost {
              margin-top: 125px;
+
          }
+
      </style>
  {% endblock %}
 
 {% block body %}
-    <div class="container" id="viewpost">
-        <h1>Blog index</h1>
-
-        <div class="row">
+<section id="blog">
+    <div class="container-fluid">
+        <div class="row pt-lg-5">
+            <div class="col-md-11 col-sm-12 mx-md-auto">
             <div class="card-deck">
-                {% for blog in blogs %}
-                    <div class="col-md-4">
-                        <div class="card mb-4 shadow-sm">
-                            <img width="100%" src="{{ vich_uploader_asset(blog, 'imageFile') }}" class="card-img-top"
-                                 alt="{{ blog.imageName }}"/>
-                            <div class="card-body">
-                                <h5 class="card-title">{{ blog.title }}</h5>
-                                <p class="card-text">{{ blog.body|raw }}</p> {# |truncate(250, true, "read_more_link") #}
-                            </div>
-                            <div class="card-footer">
-                                <div class="btn-group">
-                                    <a href="/viewpost/{{ blog.id }}" class="text-dark">
-                                        <button type="button" class="btn btn-sm btn-outline-secondary btn-primary">View
-                                        </button>
-                                    </a>
-                                    {% if (is_granted('ROLE_USER')) %}
-                                        <a href="{{ path('blog_edit', {'id': blog.id}) }}" class="text-dark">
-                                            <button type="button" class="btn btn-sm btn-outline-secondary btn-primary">
-                                                Edit
-                                            </button>
-                                        </a>
-                                    {% endif %}
-                                </div>
-                                <small class="text-muted">{% if (blog.front) %}On{% else %}Off{% endif %}
-                                    frontpage</small>
-                            </div>
+                {% for post in blogs %}
+{#                    <div class="col-md-4">#}
+{#                        <div class="card mb-4 shadow-sm">#}
+{#                            <img width="100%" src="{{ vich_uploader_asset(blog, 'imageFile') }}" class="card-img-top"#}
+{#                                 alt="{{ blog.imageName }}"/>#}
+{#                            <div class="card-body">#}
+{#                                <h5 class="card-title">{{ blog.title }}</h5>#}
+{#                                <p class="card-text">{{ blog.body|raw }}</p> #}{# |truncate(250, true, "read_more_link") #}
+{#                            </div>#}
+{#                            <div class="card-footer">#}
+{#                                <div class="btn-group">#}
+{#                                    <a href="/viewpost/{{ blog.id }}" class="text-dark">#}
+{#                                        <button type="button" class="btn btn-sm btn-outline-secondary btn-primary">View#}
+{#                                        </button>#}
+{#                                    </a>#}
+{#                                    {% if (is_granted('ROLE_USER')) %}#}
+{#                                        <a href="{{ path('blog_edit', {'id': blog.id}) }}" class="text-dark">#}
+{#                                            <button type="button" class="btn btn-sm btn-outline-secondary btn-primary">#}
+{#                                                Edit#}
+{#                                            </button>#}
+{#                                        </a>#}
+{#                                    {% endif %}#}
+{#                                </div>#}
+{#                                <small class="text-muted">{% if (blog.front) %}On{% else %}Off{% endif %}#}
+{#                                    frontpage</small>#}
+{#                            </div>#}
+{#                        </div>#}
+{#                    </div>#}
+                    <div class="card">
+                        <div class="card-img-top" style="background-image: url('{{ vich_uploader_asset(post, 'imageFile') }}')"></div>
+                        <div class="card-body">
+                            <h5 class="card-title">{{ post.title }}</h5>
+                            <p class="card-text">
+                                {{ post.body|raw|u.truncate(125, '...') }}
+
+                            </p>
+                        </div>
+                        <div class="card-footer">
+{#                            <div class="social-buttons">#}
+{#                                <a class="twitter-share-button"#}
+{#                                   href="https://twitter.com/intent/tweet"#}
+{#                                   data-size="large"#}
+{#                                   data-text="{{ post.body|raw|u.truncate(50, '...') }}"#}
+{#                                   data-url="https://dev.twitter.com/web/tweet-button"#}
+{#                                   data-hashtags="CampusGouda"#}
+{#                                   data-via="twitterdev"#}
+{#                                   data-related="twitterapi,twitter">#}
+{#                                    Tweet#}
+{#                                </a>#}
+{#                                <div class="fb-share-button"#}
+{#                                     data-href="https://www.your-domain.com/your-page.html"#}
+{#                                     data-layout="button_count"#}
+{#                                     data-size="large">#}
+{#                                </div>#}
+{#                                <script type="IN/Share" data-url="https://www.campusgouda.nl/viewpost/{{ post.title }}"></script>#}
+{#                            </div>#}
+                            <a href="/viewpost/{{ post.id }}" class="btn btn-green">
+                                Meer lezen
+                            </a>
+                            {% if app.user %}
+                                <a href="{{ path('blog_edit', {'id': post.id}) }}">
+                                    <i class="fas fa-pen text-black-50"></i>
+                                </a>
+                            {% endif %}
+
+
                         </div>
                     </div>
                 {% endfor %}
@@ -55,5 +97,6 @@
             </a>
         {% endif %}
     </div>
+</div>
 
 {% endblock %}
