@@ -18,6 +18,22 @@
   }
 }
 
+@media(min-width:768px) {
+  .overGouda-cols {
+    -webkit-column-gap: 4%;
+    -moz-column-gap: 4%;
+    column-gap: 4%;
+    -webkit-column-count: 2;
+    -moz-column-count: 2;
+    column-count: 2;
+
+    h3 {
+      -webkit-column-span: all;
+      column-span: all;
+    }
+  }
+}
+
 @media(max-width:992px) {
   .info-margin {
     padding-right: 1em !important;
