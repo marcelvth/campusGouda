@@ -69,7 +69,7 @@
                                 <div class="card-body">
                                     <h5 class="card-title">{{ post.title }}</h5>
                                     <p class="card-text">
-                                       {{ post.body|raw|u.truncate(125, '...') }}
+                                       {{ post.body|u.truncate(125, '...')|raw }}
 
                                     </p>
                                 </div>
@@ -78,7 +78,7 @@
                                         <a class="twitter-share-button"
                                            href="https://twitter.com/intent/tweet"
                                            data-size="large"
-                                           data-text="{{ post.body|raw|u.truncate(50, '...') }}"
+                                           data-text="{{ post.body|u.truncate(50, '...')|raw }}"
                                            data-url="https://dev.twitter.com/web/tweet-button"
                                            data-hashtags="CampusGouda"
                                            data-via="twitterdev"
