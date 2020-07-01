@@ -81,12 +81,11 @@
                                            data-text="{{ post.body|raw|u.truncate(50, '...') }}"
                                            data-url="https://dev.twitter.com/web/tweet-button"
                                            data-hashtags="CampusGouda"
-                                           data-via="twitterdev"
-                                           data-related="twitterapi,twitter">
+                                           data-via="twitterdev" >
                                             Tweet
                                         </a>
                                         <div class="fb-share-button"
-                                             data-href="https://www.your-domain.com/your-page.html"
+                                             data-href="https://www.campusgouda.nl/viewpost/{{ post.id }}"
                                              data-layout="button_count"
                                              data-size="large">
                                         </div>
