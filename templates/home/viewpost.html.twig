@@ -5,7 +5,7 @@
     <meta property="og:url"                content="https://www.campusgouda.nl/viewpost/{{ post.title }}" />
     <meta property="og:type"               content="article" />
     <meta property="og:title"              content="{{ post.title }}" />
-{#    <meta property="og:description"        content="{{ post.body|raw }}" />#}
+    <meta property="og:description"        content="Een campus gouda artikel over {{ post.title }}" />
     <meta property="og:image"              content="https://www.campusgouda.nl{{ vich_uploader_asset(post, 'imageFile') }}" />
 {% endblock %}
 {% block stylesheets %}
