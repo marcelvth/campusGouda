@@ -14,7 +14,9 @@
     }
   }
 }
+.card-deck {
 
+}
 .card {
   border: 1px solid $primary;
   .card-img-top {
@@ -23,12 +25,24 @@
     background-position: center;
     background-size: cover;
   }
-  .card-body {
+  .read-more {
+    padding: 1.25rem;
+    display: flex;
+    a.btn-green {
+      margin-left: auto;
+      background-color: $primary;
+      color: white;
 
+      &:hover {
+        background-color: darken($primary, 7.5%);
+        color: $white;
+      }
+
+    }
   }
 
+
   .card-footer {
-    padding: 10px;
     background-color: $secBg;
     display: flex;
 
@@ -45,17 +59,7 @@
         margin-right: 15px;
       }
     }
-    a.btn-green {
-      margin-left: auto;
-      background-color: $primary;
-      color: white;
 
-      &:hover {
-        background-color: darken($primary, 7.5%);
-        color: $white;
-      }
-
-    }
   }
 
 }

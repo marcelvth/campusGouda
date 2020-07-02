@@ -70,8 +70,17 @@
                                     <h5 class="card-title">{{ post.title }}</h5>
                                     <p class="card-text">
                                        {{ post.body|u.truncate(125, '...')|raw }}
-
                                     </p>
+                                </div>
+                                <div class="read-more">
+                                    <a href="/viewpost/{{ post.id }}" class="btn btn-green">
+                                        Meer lezen
+                                    </a>
+                                    {% if app.user %}
+                                        <a href="{{ path('blog_edit', {'id': post.id}) }}">
+                                            <i class="fas fa-pen text-black-50"></i>
+                                        </a>
+                                    {% endif %}
                                 </div>
                                 <div class="card-footer">
                                     <div class="social-buttons">
@@ -91,16 +100,6 @@
                                         </div>
                                         <script type="IN/Share" data-url="https://www.campusgouda.nl/viewpost/{{ post.title }}"></script>
                                     </div>
-                                    <a href="/viewpost/{{ post.id }}" class="btn btn-green">
-                                        Meer lezen
-                                    </a>
-                                {% if app.user %}
-                                    <a href="{{ path('blog_edit', {'id': post.id}) }}">
-                                        <i class="fas fa-pen text-black-50"></i>
-                                    </a>
-                                {% endif %}
-
-
                                 </div>
                             </div>
                         {% endfor %}
