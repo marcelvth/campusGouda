@@ -5,7 +5,7 @@
     <meta property="og:url"                content="https://www.campusgouda.nl/viewpost/{{ post.title }}" />
     <meta property="og:type"               content="article" />
     <meta property="og:title"              content="{{ post.title }}" />
-    <meta property="og:description"        content="{{ post.body|raw|u.truncate(25, '...') }}" />
+    <meta property="og:description"        content="{{ post.body|raw }}" />
     <meta property="og:image"              content="https://www.campusgouda.nl{{ vich_uploader_asset(post, 'imageFile') }}" />
 {% endblock %}
 {% block stylesheets %}
@@ -29,11 +29,10 @@
                 <a class="twitter-share-button"
                    href="https://twitter.com/intent/tweet"
                    data-size="large"
-                   data-text="{{ post.body|u.truncate(250, ' ...', true)|raw }}"
-                   data-url="https://dev.twitter.com/web/tweet-button"
-                   data-hashtags="CampusGouda"
-                   data-via="twitterdev"
-                   data-related="twitterapi,twitter">
+                   data-text="Een nieuws artikel van Campus Gouda: {{ post.title }}"
+                   data-url="https://www.campusgouda.nl/viewpost/{{ post.id }}"
+                   data-hashtags="campusgouda, middenholland, triplehelix"
+                   data-via="twitterdev" >
                     Tweet
                 </a>
 {#                <div class="fb-share-button"#}
