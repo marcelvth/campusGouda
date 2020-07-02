@@ -5,7 +5,7 @@
     <meta property="og:url"                content="https://www.campusgouda.nl/viewpost/{{ post.title }}" />
     <meta property="og:type"               content="article" />
     <meta property="og:title"              content="{{ post.title }}" />
-    <meta property="og:description"        content="{{ post.body|raw }}" />
+{#    <meta property="og:description"        content="{{ post.body|raw }}" />#}
     <meta property="og:image"              content="https://www.campusgouda.nl{{ vich_uploader_asset(post, 'imageFile') }}" />
 {% endblock %}
 {% block stylesheets %}
@@ -17,6 +17,8 @@
      </style>
 {% endblock %}
 {% block body %}
+
+
 <div class="container" id="viewpost">
     <div class="card">
         <div class="card-img-top" style="background-image: url('{{ vich_uploader_asset(post, 'imageFile') }}')"></div>
