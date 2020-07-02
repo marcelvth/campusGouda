@@ -52,7 +52,7 @@
                         <div class="card-body">
                             <h5 class="card-title">{{ post.title }}</h5>
                             <p class="card-text">
-                                {{ post.body|raw|u.truncate(125, '...') }}
+                                {{ post.body|raw|u.truncate(200, ' ...', true) }}
 
                             </p>
                         </div>

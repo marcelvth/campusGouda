@@ -29,7 +29,7 @@
                 <a class="twitter-share-button"
                    href="https://twitter.com/intent/tweet"
                    data-size="large"
-                   data-text="{{ post.body|u.truncate(50, '...')|raw }}"
+                   data-text="{{ post.body|u.truncate(250, ' ...', true)|raw }}"
                    data-url="https://dev.twitter.com/web/tweet-button"
                    data-hashtags="CampusGouda"
                    data-via="twitterdev"
