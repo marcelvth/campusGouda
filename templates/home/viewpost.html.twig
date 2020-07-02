@@ -36,12 +36,12 @@
                    data-related="twitterapi,twitter">
                     Tweet
                 </a>
-                <div class="fb-share-button"
-                     data-href="https://www.your-domain.com/your-page.html"
-                     data-layout="button_count"
-                     data-size="large">
-                </div>
-                <script type="IN/Share" data-url="https://www.campusgouda.nl/viewpost/{{ post.title }}"></script>
+{#                <div class="fb-share-button"#}
+{#                     data-href="https://www.your-domain.com/your-page.html"#}
+{#                     data-layout="button_count"#}
+{#                     data-size="large">#}
+{#                </div>#}
+                <script type="IN/Share" data-url="https://www.campusgouda.nl/viewpost/{{ post.id }}"></script>
             </div>
         {% if app.user %}
             <a href="{{ path('blog_edit', {'id': post.id}) }}">
