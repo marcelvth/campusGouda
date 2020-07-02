@@ -88,9 +88,9 @@
                                         <a class="twitter-share-button"
                                            href="https://twitter.com/intent/tweet"
                                            data-size="large"
-                                           data-text="{{ post.body|u.truncate(200, ' ...')|raw }}"
+                                           data-text="Een nieuws artikel van Campus Gouda"
                                            data-url="https://dev.twitter.com/web/tweet-button"
-                                           data-hashtags="CampusGouda"
+                                           data-hashtags="campusgouda, middenholland, triplehelix"
                                            data-via="twitterdev" >
                                             Tweet
                                         </a>
@@ -99,7 +99,7 @@
                                              data-layout="button_count"
                                              data-size="large">
                                         </div>
-                                        <script type="IN/Share" data-url="https://www.campusgouda.nl/viewpost/{{ post.title }}"></script>
+                                        <script type="IN/Share" data-url="https://www.campusgouda.nl/viewpost/{{ post.id }}"></script>
                                     </div>
                                 </div>
                             </div>
