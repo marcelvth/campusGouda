@@ -18,7 +18,7 @@
     <div class="container-fluid">
         <div class="row pt-lg-5">
             <div class="col-md-11 col-sm-12 mx-md-auto">
-            <div class="card-deck">
+            <div class="card-columns">
                 {% for post in blogs %}
 {#                    <div class="col-md-4">#}
 {#                        <div class="card mb-4 shadow-sm">#}
@@ -47,13 +47,14 @@
 {#                            </div>#}
 {#                        </div>#}
 {#                    </div>#}
+
                     <div class="card">
                         <div class="card-img-top" style="background-image: url('{{ vich_uploader_asset(post, 'imageFile') }}')"></div>
                         <div class="card-body">
                             <h5 class="card-title">{{ post.title }}</h5>
                             <p class="card-text">
-                                {{ post.body|raw|u.truncate(200, ' ...', true) }}
-
+                                {% set event_max_char = 200 %}
+                                {{ post.body|length > event_max_char ? post.body|slice(0,event_max_char) | raw : post.body | raw }}
                             </p>
                         </div>
                         <div class="card-footer">

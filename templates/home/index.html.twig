@@ -69,8 +69,8 @@
                                 <div class="card-body">
                                     <h5 class="card-title">{{ post.title }}</h5>
                                     <p class="card-text">
-                                       {{ post.body|u.truncate(200, ' ...')|raw }}
-
+                                        {% set event_max_char = 200 %}
+                                        {{ post.body|length > event_max_char ? post.body|slice(0,event_max_char) | raw : post.body | raw }}
                                     </p>
                                 </div>
                                 <div class="read-more">
