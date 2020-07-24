@@ -2,10 +2,10 @@
 
 {% block title %}{{ post.title }}{% endblock %}
 {% block meta %}
-    <meta property="og:url"                content="https://www.campusgouda.nl/viewpost/{{ post.title }}" />
+    <meta property="og:url"                content="https://www.campusgouda.nl/viewpost/{{ post.id }}" />
     <meta property="og:type"               content="article" />
     <meta property="og:title"              content="{{ post.title }}" />
-    <meta property="og:description"        content="Een campus gouda artikel over {{ post.title }}" />
+    <meta property="og:description"        content="Een Campus Gouda nieuws artikel over {{ post.title }}" />
     <meta property="og:image"              content="https://www.campusgouda.nl{{ vich_uploader_asset(post, 'imageFile') }}" />
 {% endblock %}
 {% block stylesheets %}
@@ -35,12 +35,12 @@
                    data-hashtags="campusgouda, middenholland, triplehelix"
                    data-via="twitterdev" >
                     Tweet
-                </a>
-{#                <div class="fb-share-button"#}
-{#                     data-href="https://www.your-domain.com/your-page.html"#}
-{#                     data-layout="button_count"#}
-{#                     data-size="large">#}
-{#                </div>#}
+                </a>                
+                <div class="fb-share-button"
+                    data-href="https://www.campusgouda.nl/viewpost/{{ post.id }}"
+                    data-layout="button_count"
+                    data-size="large">
+               </div>
                 <script type="IN/Share" data-url="https://www.campusgouda.nl/viewpost/{{ post.id }}"></script>
             </div>
         {% if app.user %}
